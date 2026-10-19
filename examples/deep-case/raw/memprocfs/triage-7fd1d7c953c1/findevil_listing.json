@@ -1,0 +1,22 @@
+{
+  "yara_rules.txt": {
+    "f_isdir": false,
+    "size": 0,
+    "name": "yara_rules.txt"
+  },
+  "yara.txt": {
+    "f_isdir": false,
+    "size": 867,
+    "name": "yara.txt"
+  },
+  "findevil.txt": {
+    "f_isdir": false,
+    "size": 1021,
+    "name": "findevil.txt"
+  },
+  "readme.txt": {
+    "f_isdir": false,
+    "size": 1248,
+    "name": "readme.txt"
+  }
+}

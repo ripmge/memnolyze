@@ -1,0 +1,3392 @@
+[
+  {
+    "finding_id": "F-0001",
+    "category": "memory_injection",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Executable private memory region (malfind)",
+    "process_id": "2860:0xffff800cfe03a580:2023-05-25T18:53:58+00:00",
+    "pid": 2860,
+    "address": "0x247b2e90000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "0"
+      }
+    ],
+    "description": "Executable private memory region (malfind). This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0002",
+    "category": "memory_injection",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Executable private memory region (malfind)",
+    "process_id": "2860:0xffff800cfe03a580:2023-05-25T18:53:58+00:00",
+    "pid": 2860,
+    "address": "0x247b2d80000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "1"
+      }
+    ],
+    "description": "Executable private memory region (malfind). This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0003",
+    "category": "memory_injection",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Executable private memory region (malfind)",
+    "process_id": "2860:0xffff800cfe03a580:2023-05-25T18:53:58+00:00",
+    "pid": 2860,
+    "address": "0x247bf000000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "2"
+      }
+    ],
+    "description": "Executable private memory region (malfind). This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0004",
+    "category": "memory_injection",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Executable private memory region (malfind)",
+    "process_id": "2860:0xffff800cfe03a580:2023-05-25T18:53:58+00:00",
+    "pid": 2860,
+    "address": "0x247c55d0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "3"
+      }
+    ],
+    "description": "Executable private memory region (malfind). This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0005",
+    "category": "memory_injection",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Executable private memory region (malfind)",
+    "process_id": "2860:0xffff800cfe03a580:2023-05-25T18:53:58+00:00",
+    "pid": 2860,
+    "address": "0x247c6170000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "4"
+      }
+    ],
+    "description": "Executable private memory region (malfind). This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0006",
+    "category": "memory_injection",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Executable private memory region (malfind)",
+    "process_id": "2860:0xffff800cfe03a580:2023-05-25T18:53:58+00:00",
+    "pid": 2860,
+    "address": "0x247c5b60000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "5"
+      }
+    ],
+    "description": "Executable private memory region (malfind). This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0007",
+    "category": "memory_injection",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Executable private memory region (malfind)",
+    "process_id": "2860:0xffff800cfe03a580:2023-05-25T18:53:58+00:00",
+    "pid": 2860,
+    "address": "0x247c8450000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "6"
+      }
+    ],
+    "description": "Executable private memory region (malfind). This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0008",
+    "category": "memory_injection",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Executable private memory region (malfind)",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1eea4e80000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "7"
+      }
+    ],
+    "description": "Executable private memory region (malfind). This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0009",
+    "category": "memory_injection",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Executable private memory region (malfind)",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1eea62e0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "8"
+      }
+    ],
+    "description": "Executable private memory region (malfind). This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0010",
+    "category": "memory_injection",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Executable private memory region (malfind)",
+    "process_id": "1004:0xffff800cffabe580:2023-05-25T18:54:04+00:00",
+    "pid": 1004,
+    "address": "0x19017d40000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "9"
+      }
+    ],
+    "description": "Executable private memory region (malfind). This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0011",
+    "category": "memory_injection",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Executable private memory region (malfind)",
+    "process_id": "1004:0xffff800cffabe580:2023-05-25T18:54:04+00:00",
+    "pid": 1004,
+    "address": "0x190184f0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "10"
+      }
+    ],
+    "description": "Executable private memory region (malfind). This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0012",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4:0xffff800cfbed8440:2023-05-25T18:53:54+00:00",
+    "pid": 4,
+    "address": "0x77400000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "0"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0013",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4:0xffff800cfbed8440:2023-05-25T18:53:54+00:00",
+    "pid": 4,
+    "address": "0x7ff913000000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "1"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0014",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4:0xffff800cfbed8440:2023-05-25T18:53:54+00:00",
+    "pid": 4,
+    "address": "0x7ff913030000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "2"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0015",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "644:0xffff800cfe514080:2023-05-25T18:53:55+00:00",
+    "pid": 644,
+    "address": "0x20620fc0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "110"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0016",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "288:0xffff800cfe6c1080:2023-05-25T18:53:56+00:00",
+    "pid": 288,
+    "address": "0x1a99ac70000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "403"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0017",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "1200:0xffff800cfe749580:2023-05-25T18:53:56+00:00",
+    "pid": 1200,
+    "address": "0x14befe70000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "699"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0018",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "1980:0xffff800cfe92f580:2023-05-25T18:53:57+00:00",
+    "pid": 1980,
+    "address": "0x22c4a470000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "1308"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0019",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "2860:0xffff800cfe03a580:2023-05-25T18:53:58+00:00",
+    "pid": 2860,
+    "address": "0x247b2fa0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "2226"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0020",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "3716:0xffff800cfee1f580:2023-05-25T18:53:58+00:00",
+    "pid": 3716,
+    "address": "0x262c70f0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "2553"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0021",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "3988:0xffff800cfc0ef580:2023-05-25T18:53:58+00:00",
+    "pid": 3988,
+    "address": "0x2a430bd0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "2817"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0022",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0x1120000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3115"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0023",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0x1250000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3116"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0024",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0x2ee0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3117"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0025",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0x3080000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3118"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0026",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0x3270000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3119"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0027",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0x33a0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3120"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0028",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0x3620000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3121"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0029",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0x5030000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3122"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0030",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0x55b0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3123"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0031",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0x6760000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3124"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0032",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0x69a0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3125"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0033",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0x6c50000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3127"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0034",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0x7700000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3128"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0035",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0x7840000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3129"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0036",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0xa160000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3130"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0037",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0xc0e0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3131"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0038",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0xba10000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3132"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0039",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0x109c0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3133"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0040",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "address": "0x1a0e1c80000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3435"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0041",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "address": "0x1a0e5360000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3436"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0042",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "address": "0x1a0e5000000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3437"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0043",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "address": "0x1a0e5250000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3438"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0044",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "address": "0x1a0e5110000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3439"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0045",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "address": "0x1a0e5850000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3440"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0046",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "address": "0x1a0e5710000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3441"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0047",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "address": "0x1a0e5600000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3442"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0048",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "address": "0x1a0e5960000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3443"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0049",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "address": "0x1a0e6620000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3444"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0050",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1e69f930000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3566"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0051",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1e6a3000000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3567"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0052",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1e6a2a00000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3568"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0053",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1e6a2c50000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3569"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0054",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1e6a2b10000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3570"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0055",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1e6a2d60000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3571"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0056",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1e6a3250000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3572"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0057",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1e6a3110000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3573"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0058",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1eea4550000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3574"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0059",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1eea4580000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3575"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0060",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1eea45d0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3576"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0061",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1eea45f0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3577"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0062",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1eea4e10000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3578"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0063",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1eea4c20000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3579"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0064",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1eea4d70000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3580"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0065",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1eea4e00000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3581"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0066",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1eea5600000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3582"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0067",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1eeb63b0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3583"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0068",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1eeb8150000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3584"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0069",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "address": "0x1eeb81e0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3585"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0070",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "5720:0xffff800cfecb9580:2023-05-25T18:54:02+00:00",
+    "pid": 5720,
+    "address": "0x278e0c60000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3800"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0071",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "6336:0xffff800cff208080:2023-05-25T18:54:03+00:00",
+    "pid": 6336,
+    "address": "0x29e8bdc0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4072"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0072",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "6336:0xffff800cff208080:2023-05-25T18:54:03+00:00",
+    "pid": 6336,
+    "address": "0x29e8bd20000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4073"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0073",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "6336:0xffff800cff208080:2023-05-25T18:54:03+00:00",
+    "pid": 6336,
+    "address": "0x29e8c970000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4074"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0074",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "6336:0xffff800cff208080:2023-05-25T18:54:03+00:00",
+    "pid": 6336,
+    "address": "0x29e8c370000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4075"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0075",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "6336:0xffff800cff208080:2023-05-25T18:54:03+00:00",
+    "pid": 6336,
+    "address": "0x29e8c5c0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4076"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0076",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "6336:0xffff800cff208080:2023-05-25T18:54:03+00:00",
+    "pid": 6336,
+    "address": "0x29e8c480000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4077"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0077",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "6336:0xffff800cff208080:2023-05-25T18:54:03+00:00",
+    "pid": 6336,
+    "address": "0x29e8c6d0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4078"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0078",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "6336:0xffff800cff208080:2023-05-25T18:54:03+00:00",
+    "pid": 6336,
+    "address": "0x29e8cbc0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4079"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0079",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "6336:0xffff800cff208080:2023-05-25T18:54:03+00:00",
+    "pid": 6336,
+    "address": "0x29e8ca80000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4080"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0080",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "6512:0xffff800cff83c580:2023-05-25T18:54:03+00:00",
+    "pid": 6512,
+    "address": "0x228b07a0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4217"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0081",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "7128:0xffff800cfe6b9080:2023-05-25T18:54:04+00:00",
+    "pid": 7128,
+    "address": "0x19595fb0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4501"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0082",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "1004:0xffff800cffabe580:2023-05-25T18:54:04+00:00",
+    "pid": 1004,
+    "address": "0x19017d70000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4543"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0083",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "8504:0xffff800cff734580:2023-05-25T18:54:14+00:00",
+    "pid": 8504,
+    "address": "0x19bdd050000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4827"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0084",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "8588:0xffff800cffe7a580:2023-05-25T18:54:15+00:00",
+    "pid": 8588,
+    "address": "0x3670000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4910"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0085",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "8944:0xffff800cff3cb580:2023-05-25T18:54:19+00:00",
+    "pid": 8944,
+    "address": "0x206e55b0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5068"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0086",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "8944:0xffff800cff3cb580:2023-05-25T18:54:19+00:00",
+    "pid": 8944,
+    "address": "0x206e5700000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5069"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0087",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "8944:0xffff800cff3cb580:2023-05-25T18:54:19+00:00",
+    "pid": 8944,
+    "address": "0x206e56f0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5070"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0088",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "2964:0xffff800cff684580:2023-05-25T19:01:04+00:00",
+    "pid": 2964,
+    "address": "0x213c0210000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5404"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0089",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff7c37d0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5486"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0090",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff90f340000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5487"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0091",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff90e0b0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5488"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0092",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff909970000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5489"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0093",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff8f8800000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5490"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0094",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff8e87c0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5491"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0095",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff908560000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5492"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0096",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff8fb350000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5493"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0097",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff90ae00000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5494"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0098",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff909a20000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5495"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0099",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff90d880000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5496"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0100",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff90c000000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5497"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0101",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff90ee40000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5498"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0102",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff90e460000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5499"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0103",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff90e1c0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5500"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0104",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff90edb0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5501"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0105",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff90f240000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5502"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0106",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff90f140000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5503"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0107",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff910150000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5504"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0108",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff90fb10000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5505"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0109",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff90f370000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5506"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0110",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff90f350000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5507"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0111",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff90f390000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5508"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0112",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff90fec0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5509"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0113",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff90fcb0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5510"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0114",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff90fe60000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5511"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0115",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff90ff60000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5512"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0116",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff9107c0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5513"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0117",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff910590000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5514"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0118",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff910240000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5515"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0119",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff910220000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5516"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0120",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff9104e0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5517"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0121",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff9106e0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5518"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0122",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff910630000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5519"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0123",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff912ab0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5520"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0124",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff912440000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5521"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0125",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff911fd0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5522"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0126",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff912cd0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5523"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0127",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff912c90000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5524"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0128",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff912b90000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5525"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0129",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "Module absent from a loader list",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x7ff913030000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5526"
+      }
+    ],
+    "description": "Module absent from a loader list. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0130",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "PEB masquerading indicator",
+    "process_id": "3988:0xffff800cfc0ef580:2023-05-25T18:53:58+00:00",
+    "pid": 3988,
+    "address": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pebmasquerade",
+        "source_file": "raw/volatility/pebmasquerade-941868f11919/output.jsonl",
+        "record_id": "67"
+      }
+    ],
+    "description": "PEB masquerading indicator. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0131",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "PEB masquerading indicator",
+    "process_id": "8876:0xffff800cfffc5580:2023-05-25T18:54:18+00:00",
+    "pid": 8876,
+    "address": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pebmasquerade",
+        "source_file": "raw/volatility/pebmasquerade-941868f11919/output.jsonl",
+        "record_id": "100"
+      }
+    ],
+    "description": "PEB masquerading indicator. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0132",
+    "category": "backend_indicator",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "FindEvil: PROC_DEBUG",
+    "process_id": "356:0xffff800cff0ab580:2023-05-25T18:57:09+00:00",
+    "pid": 356,
+    "address": "0x0000000000000000",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:3"
+      }
+    ],
+    "description": "FindEvil: PROC_DEBUG. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0133",
+    "category": "backend_indicator",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "FindEvil: PROC_DEBUG",
+    "process_id": "1908:0xffff800cffd5d080:2023-05-25T18:57:09+00:00",
+    "pid": 1908,
+    "address": "0x0000000000000000",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:4"
+      }
+    ],
+    "description": "FindEvil: PROC_DEBUG. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0134",
+    "category": "backend_indicator",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "FindEvil: PROC_DEBUG",
+    "process_id": "2952:0xffff800cffdb5580:2023-05-25T19:01:04+00:00",
+    "pid": 2952,
+    "address": "0x0000000000000000",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:5"
+      }
+    ],
+    "description": "FindEvil: PROC_DEBUG. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0135",
+    "category": "backend_indicator",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "FindEvil: PROC_DEBUG",
+    "process_id": "2964:0xffff800cff684580:2023-05-25T19:01:04+00:00",
+    "pid": 2964,
+    "address": "0x0000000000000000",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:6"
+      }
+    ],
+    "description": "FindEvil: PROC_DEBUG. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0136",
+    "category": "backend_indicator",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "FindEvil: PROC_DEBUG",
+    "process_id": "4716:0xffff800cff1ed080:2023-05-25T18:54:00+00:00",
+    "pid": 4716,
+    "address": "0x0000000000000000",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:7"
+      }
+    ],
+    "description": "FindEvil: PROC_DEBUG. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0137",
+    "category": "backend_indicator",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "FindEvil: PROC_DEBUG",
+    "process_id": "7912:0xffff800cff521080:2023-05-25T19:06:57+00:00",
+    "pid": 7912,
+    "address": "0x0000000000000000",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:8"
+      }
+    ],
+    "description": "FindEvil: PROC_DEBUG. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0138",
+    "category": "thread_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "FindEvil: THREAD",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0x00007ff91304f320",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:9"
+      }
+    ],
+    "description": "FindEvil: THREAD. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0139",
+    "category": "thread_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "FindEvil: THREAD",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0x00007ff91304f320",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:10"
+      }
+    ],
+    "description": "FindEvil: THREAD. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0140",
+    "category": "thread_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "FindEvil: THREAD",
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "address": "0x00007ff91304f320",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:11"
+      }
+    ],
+    "description": "FindEvil: THREAD. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0141",
+    "category": "thread_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "FindEvil: THREAD",
+    "process_id": "5720:0xffff800cfecb9580:2023-05-25T18:54:02+00:00",
+    "pid": 5720,
+    "address": "0x00007ff90f561fd0",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:12"
+      }
+    ],
+    "description": "FindEvil: THREAD. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0142",
+    "category": "thread_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "FindEvil: THREAD",
+    "process_id": "5836:0xffff800cff4cc580:2023-05-25T18:54:02+00:00",
+    "pid": 5836,
+    "address": "0x00007ff7575462b0",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:13"
+      }
+    ],
+    "description": "FindEvil: THREAD. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0143",
+    "category": "loader_anomaly",
+    "severity": "medium",
+    "confidence": "low",
+    "title": "FindEvil: PEB_BAD_LDR",
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "address": "0x0000003fb316f000",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:14"
+      }
+    ],
+    "description": "FindEvil: PEB_BAD_LDR. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0144",
+    "category": "correlation",
+    "severity": "medium",
+    "confidence": "medium",
+    "title": "Loader anomaly with network activity",
+    "process_id": "4:0xffff800cfbed8440:2023-05-25T18:53:54+00:00",
+    "pid": 4,
+    "address": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "0"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "1"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "2"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "27"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "28"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "31"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "35"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "36"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "0"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "1"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "17"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "18"
+      }
+    ],
+    "description": "Loader anomaly with network activity. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0145",
+    "category": "correlation",
+    "severity": "medium",
+    "confidence": "medium",
+    "title": "Loader anomaly with network activity",
+    "process_id": "644:0xffff800cfe514080:2023-05-25T18:53:55+00:00",
+    "pid": 644,
+    "address": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "110"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "37"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "38"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "39"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "4"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "5"
+      }
+    ],
+    "description": "Loader anomaly with network activity. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0146",
+    "category": "correlation",
+    "severity": "medium",
+    "confidence": "medium",
+    "title": "Loader anomaly with network activity",
+    "process_id": "1200:0xffff800cfe749580:2023-05-25T18:53:56+00:00",
+    "pid": 1200,
+    "address": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "699"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "17"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "20"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "21"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "10"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "11"
+      }
+    ],
+    "description": "Loader anomaly with network activity. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  },
+  {
+    "finding_id": "F-0147",
+    "category": "correlation",
+    "severity": "medium",
+    "confidence": "medium",
+    "title": "Loader anomaly with network activity",
+    "process_id": "8944:0xffff800cff3cb580:2023-05-25T18:54:19+00:00",
+    "pid": 8944,
+    "address": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5068"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5069"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5070"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "59"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "60"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "34"
+      }
+    ],
+    "description": "Loader anomaly with network activity. This is an investigation hypothesis, not a malware confirmation.",
+    "limitations": [
+      "Indicator requiring analyst validation; legitimate software or acquisition artifacts may explain it."
+    ]
+  }
+]

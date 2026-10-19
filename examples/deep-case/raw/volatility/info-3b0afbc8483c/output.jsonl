@@ -1,0 +1,22 @@
+
+{"Value": "0xf801d2807000", "Variable": "Kernel Base", "__children": []}
+{"Value": "0x1ad000", "Variable": "DTB", "__children": []}
+{"Value": "file:///C:/Users/Administrator/AppData/Local/Programs/Python/Python312/Lib/site-packages/volatility3/symbols/windows/ntkrnlmp.pdb/5B396742883C48D0AB74C7374DEEE916-1.json.xz", "Variable": "Symbols", "__children": []}
+{"Value": "True", "Variable": "Is64Bit", "__children": []}
+{"Value": "False", "Variable": "IsPAE", "__children": []}
+{"Value": "0 WindowsIntel32e", "Variable": "layer_name", "__children": []}
+{"Value": "1 WindowsCrashDump64Layer", "Variable": "memory_layer", "__children": []}
+{"Value": "2 FileLayer", "Variable": "base_layer", "__children": []}
+{"Value": "0xf801d2badd50", "Variable": "KdVersionBlock", "__children": []}
+{"Value": "15.17134", "Variable": "Major/Minor", "__children": []}
+{"Value": "34404", "Variable": "MachineType", "__children": []}
+{"Value": "4", "Variable": "KeNumberProcessors", "__children": []}
+{"Value": "2023-05-25 19:07:00+00:00", "Variable": "SystemTime", "__children": []}
+{"Value": "C:\\Windows", "Variable": "NtSystemRoot", "__children": []}
+{"Value": "NtProductWinNt", "Variable": "NtProductType", "__children": []}
+{"Value": "10", "Variable": "NtMajorVersion", "__children": []}
+{"Value": "0", "Variable": "NtMinorVersion", "__children": []}
+{"Value": "10", "Variable": "PE MajorOperatingSystemVersion", "__children": []}
+{"Value": "0", "Variable": "PE MinorOperatingSystemVersion", "__children": []}
+{"Value": "34404", "Variable": "PE Machine", "__children": []}
+{"Value": "Fri Jun  8 09:00:00 2018", "Variable": "PE TimeDateStamp", "__children": []}

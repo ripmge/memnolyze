@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "memnolyze"
+version = "0.1.0"
+description = "Local Windows memory triage orchestration"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+engines = ["volatility3>=2.28.0", "memprocfs>=5"]
+test = ["pytest>=8"]
+
+[project.scripts]
+memnolyze = "memnolyze.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

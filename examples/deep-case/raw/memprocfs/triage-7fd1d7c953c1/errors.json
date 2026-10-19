@@ -1,0 +1,37 @@
+[
+  {
+    "pid": 4,
+    "operation": "pathuser",
+    "error": "Process.pathuser(): Failed."
+  },
+  {
+    "pid": 4,
+    "operation": "cmdline",
+    "error": "Process.cmdline(): Failed."
+  },
+  {
+    "pid": 104,
+    "operation": "pathuser",
+    "error": "Process.pathuser(): Failed."
+  },
+  {
+    "pid": 104,
+    "operation": "cmdline",
+    "error": "Process.cmdline(): Failed."
+  },
+  {
+    "pid": 1708,
+    "operation": "pathuser",
+    "error": "Process.pathuser(): Failed."
+  },
+  {
+    "pid": 1708,
+    "operation": "cmdline",
+    "error": "Process.cmdline(): Failed."
+  },
+  {
+    "pid": 1708,
+    "operation": "vad",
+    "error": "ProcessMaps.vad(): Failed."
+  }
+]

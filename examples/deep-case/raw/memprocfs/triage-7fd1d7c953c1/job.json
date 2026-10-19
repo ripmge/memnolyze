@@ -1,0 +1,20 @@
+{
+  "image": "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+  "target": "C:\\Users\\Administrator\\Documents\\project\\cases\\ransomcase-deep\\raw\\memprocfs\\triage-7fd1d7c953c1",
+  "config": {
+    "volatility_command": null,
+    "memprocfs_path": "MemProcFS_files_and_binaries-win_x64-latest",
+    "state_dir": ".state",
+    "timeout_seconds": 1800,
+    "forensic_timeout_seconds": 1800,
+    "symbol_dirs": [],
+    "plugins": null,
+    "plugin_args": {},
+    "memprocfs_forensic": true,
+    "memprocfs_symbols": false,
+    "max_vfs_bytes": 67108864
+  },
+  "offline": true,
+  "profile": "deep",
+  "pid": null
+}

@@ -1,0 +1,5264 @@
+[
+  {
+    "process_id": "4:0xffff800cfbed8440:2023-05-25T18:53:54+00:00",
+    "pid": 4,
+    "name": "System",
+    "ppid": 0,
+    "creation_time": "2023-05-25T18:53:54+00:00",
+    "eprocess": "0xffff800cfbed8440",
+    "command_line": null,
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "0"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "0"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "0"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "0"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "0"
+      }
+    ]
+  },
+  {
+    "process_id": "104:0xffff800cfbf53040:2023-05-25T18:53:49+00:00",
+    "pid": 104,
+    "name": "Registry",
+    "ppid": 4,
+    "creation_time": "2023-05-25T18:53:49+00:00",
+    "eprocess": "0xffff800cfbf53040",
+    "command_line": null,
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "1"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "1"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "3"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "1"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "1"
+      }
+    ]
+  },
+  {
+    "process_id": "320:0xffff800cfda0a4c0:2023-05-25T18:53:54+00:00",
+    "pid": 320,
+    "name": "smss.exe",
+    "ppid": 4,
+    "creation_time": "2023-05-25T18:53:54+00:00",
+    "eprocess": "0xffff800cfda0a4c0",
+    "command_line": "\\SystemRoot\\System32\\smss.exe",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "2"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "3"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "9"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "2"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "2"
+      }
+    ]
+  },
+  {
+    "process_id": "428:0xffff800cfdd6a580:2023-05-25T18:53:55+00:00",
+    "pid": 428,
+    "name": "csrss.exe",
+    "ppid": 420,
+    "creation_time": "2023-05-25T18:53:55+00:00",
+    "eprocess": "0xffff800cfdd6a580",
+    "command_line": "%SystemRoot%\\system32\\csrss.exe ObjectDirectory=\\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=sxssrv,4 ProfileControl=Off MaxRequestThreads=16",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "3"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "4"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "10"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "4"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "3"
+      }
+    ]
+  },
+  {
+    "process_id": "508:0xffff800cfe483080:2023-05-25T18:53:55+00:00",
+    "pid": 508,
+    "name": "wininit.exe",
+    "ppid": 420,
+    "creation_time": "2023-05-25T18:53:55+00:00",
+    "eprocess": "0xffff800cfe483080",
+    "command_line": "wininit.exe",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "4"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "5"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "34"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "5"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "4"
+      }
+    ]
+  },
+  {
+    "process_id": "520:0xffff800cfe480080:2023-05-25T18:53:55+00:00",
+    "pid": 520,
+    "name": "csrss.exe",
+    "ppid": 500,
+    "creation_time": "2023-05-25T18:53:55+00:00",
+    "eprocess": "0xffff800cfe480080",
+    "command_line": "%SystemRoot%\\system32\\csrss.exe ObjectDirectory=\\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=sxssrv,4 ProfileControl=Off MaxRequestThreads=16",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "5"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "6"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "33"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "105"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "5"
+      }
+    ]
+  },
+  {
+    "process_id": "608:0xffff800cfe526080:2023-05-25T18:53:55+00:00",
+    "pid": 608,
+    "name": "winlogon.exe",
+    "ppid": 500,
+    "creation_time": "2023-05-25T18:53:55+00:00",
+    "eprocess": "0xffff800cfe526080",
+    "command_line": "winlogon.exe",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "6"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "7"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "44"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "106"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "6"
+      }
+    ]
+  },
+  {
+    "process_id": "644:0xffff800cfe514080:2023-05-25T18:53:55+00:00",
+    "pid": 644,
+    "name": "services.exe",
+    "ppid": 508,
+    "creation_time": "2023-05-25T18:53:55+00:00",
+    "eprocess": "0xffff800cfe514080",
+    "command_line": "C:\\Windows\\system32\\services.exe",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "7"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "8"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "43"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "7"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "7"
+      }
+    ]
+  },
+  {
+    "process_id": "668:0xffff800cfe53e080:2023-05-25T18:53:55+00:00",
+    "pid": 668,
+    "name": "lsass.exe",
+    "ppid": 508,
+    "creation_time": "2023-05-25T18:53:55+00:00",
+    "eprocess": "0xffff800cfe53e080",
+    "command_line": "C:\\Windows\\system32\\lsass.exe",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "8"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "10"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "45"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "6"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "8"
+      }
+    ]
+  },
+  {
+    "process_id": "788:0xffff800cfe501580:2023-05-25T18:53:56+00:00",
+    "pid": 788,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe501580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k dcomlaunch -p -s PlugPlay",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "9"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "11"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "42"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "24"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "9"
+      }
+    ]
+  },
+  {
+    "process_id": "812:0xffff800cfe4ff580:2023-05-25T18:53:56+00:00",
+    "pid": 812,
+    "name": "fontdrvhost.ex",
+    "ppid": 508,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe4ff580",
+    "command_line": "\"fontdrvhost.exe\"",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "10"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "12"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "41"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "104"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "10"
+      }
+    ]
+  },
+  {
+    "process_id": "816:0xffff800cfe4fd580:2023-05-25T18:53:56+00:00",
+    "pid": 816,
+    "name": "fontdrvhost.ex",
+    "ppid": 608,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe4fd580",
+    "command_line": "\"fontdrvhost.exe\"",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "11"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "13"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "40"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "107"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "11"
+      }
+    ]
+  },
+  {
+    "process_id": "832:0xffff800cfe4fb580:2023-05-25T18:53:56+00:00",
+    "pid": 832,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe4fb580",
+    "command_line": "C:\\Windows\\system32\\svchost.exe -k DcomLaunch -p",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "12"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "14"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "39"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "53"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "12"
+      }
+    ]
+  },
+  {
+    "process_id": "932:0xffff800cfe4f7580:2023-05-25T18:53:56+00:00",
+    "pid": 932,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe4f7580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k rpcss -p",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "13"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "15"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "38"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "34"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "13"
+      }
+    ]
+  },
+  {
+    "process_id": "976:0xffff800cfe4f3580:2023-05-25T18:53:56+00:00",
+    "pid": 976,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe4f3580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k dcomlaunch -p -s LSM",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "14"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "16"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "37"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "75"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "14"
+      }
+    ]
+  },
+  {
+    "process_id": "288:0xffff800cfe6c1080:2023-05-25T18:53:56+00:00",
+    "pid": 288,
+    "name": "dwm.exe",
+    "ppid": 608,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe6c1080",
+    "command_line": "\"dwm.exe\"",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "15"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "2"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "47"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "108"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "15"
+      }
+    ]
+  },
+  {
+    "process_id": "656:0xffff800cfe4ed580:2023-05-25T18:53:56+00:00",
+    "pid": 656,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe4ed580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k netsvcs -p -s DsmSvc",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "16"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "9"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "36"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "22"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "16"
+      }
+    ]
+  },
+  {
+    "process_id": "1032:0xffff800cfe4e9580:2023-05-25T18:53:56+00:00",
+    "pid": 1032,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe4e9580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localservicenetworkrestricted -p -s lmhosts",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "17"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "19"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "35"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "12"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "17"
+      }
+    ]
+  },
+  {
+    "process_id": "1124:0xffff800cfe72d580:2023-05-25T18:53:56+00:00",
+    "pid": 1124,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe72d580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localsystemnetworkrestricted -p -s NcbService",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "18"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "20"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "49"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "90"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "18"
+      }
+    ]
+  },
+  {
+    "process_id": "1148:0xffff800cfe74d580:2023-05-25T18:53:56+00:00",
+    "pid": 1148,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe74d580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localservicenetworkrestricted -p -s TimeBrokerSvc",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "19"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "21"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "60"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "103"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "19"
+      }
+    ]
+  },
+  {
+    "process_id": "1160:0xffff800cfe74b580:2023-05-25T18:53:56+00:00",
+    "pid": 1160,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe74b580",
+    "command_line": "C:\\Windows\\system32\\svchost.exe -k LocalServiceNoNetwork -p",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "20"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "22"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "59"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "13"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "20"
+      }
+    ]
+  },
+  {
+    "process_id": "1200:0xffff800cfe749580:2023-05-25T18:53:56+00:00",
+    "pid": 1200,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe749580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localservicenetworkrestricted -p -s EventLog",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "21"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "23"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "58"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "40"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "21"
+      }
+    ]
+  },
+  {
+    "process_id": "1208:0xffff800cfe747580:2023-05-25T18:53:56+00:00",
+    "pid": 1208,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe747580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k netsvcs -p -s Schedule",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "22"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "24"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "57"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "45"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "22"
+      }
+    ]
+  },
+  {
+    "process_id": "1272:0xffff800cfe7b1580:2023-05-25T18:53:56+00:00",
+    "pid": 1272,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe7b1580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k netsvcs -p -s ProfSvc",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "23"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "25"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "61"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "102"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "23"
+      }
+    ]
+  },
+  {
+    "process_id": "1360:0xffff800cfe743580:2023-05-25T18:53:56+00:00",
+    "pid": 1360,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe743580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localservice -p -s nsi",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "24"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "26"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "56"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "76"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "24"
+      }
+    ]
+  },
+  {
+    "process_id": "1400:0xffff800cfe741580:2023-05-25T18:53:56+00:00",
+    "pid": 1400,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe741580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k netsvcs -p -s lfsvc",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "25"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "27"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "55"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "9"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "25"
+      }
+    ]
+  },
+  {
+    "process_id": "1416:0xffff800cfe819500:2023-05-25T18:53:56+00:00",
+    "pid": 1416,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe819500",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k netsvcs -p -s UserManager",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "26"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "28"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "63"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "14"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "26"
+      }
+    ]
+  },
+  {
+    "process_id": "1464:0xffff800cfe73b580:2023-05-25T18:53:56+00:00",
+    "pid": 1464,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe73b580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localservicenetworkrestricted -p -s Dhcp",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "27"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "29"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "54"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "44"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "27"
+      }
+    ]
+  },
+  {
+    "process_id": "1544:0xffff800cfe739580:2023-05-25T18:53:56+00:00",
+    "pid": 1544,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe739580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localservice -p -s EventSystem",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "28"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "30"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "53"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "16"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "28"
+      }
+    ]
+  },
+  {
+    "process_id": "1556:0xffff800cfe737580:2023-05-25T18:53:56+00:00",
+    "pid": 1556,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe737580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localsystemnetworkrestricted -p -s SysMain",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "29"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "31"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "52"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "25"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "29"
+      }
+    ]
+  },
+  {
+    "process_id": "1568:0xffff800cfe735580:2023-05-25T18:53:56+00:00",
+    "pid": 1568,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe735580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k netsvcs -p -s Themes",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "30"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "32"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "51"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "32"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "30"
+      }
+    ]
+  },
+  {
+    "process_id": "1708:0xffff800cfe8d3040:2023-05-25T18:53:56+00:00",
+    "pid": 1708,
+    "name": "MemCompression",
+    "ppid": 4,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe8d3040",
+    "command_line": null,
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "31"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "33"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "64"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "3"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "31"
+      }
+    ]
+  },
+  {
+    "process_id": "1740:0xffff800cfe731580:2023-05-25T18:53:56+00:00",
+    "pid": 1740,
+    "name": "WUDFHost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe731580",
+    "command_line": "\"C:\\Windows\\System32\\WUDFHost.exe\" -HostGUID:{193a1820-d9ac-4997-8c55-be817523f6aa} -IoEventPortName:\\UMDFCommunicationPorts\\WUDF\\HostProcess-2a04800a-f8ee-43d1-b062-0f90d65f6eca -SystemEventPortName:\\UMDFCommunicationPorts\\WUDF\\HostProcess-9e7c12f3-8b3e-4b1b-b8b9-26f4b53f1255 -IoCancelEventPortName:\\UMDFCommunicationPorts\\WUDF\\HostProcess-9368aa1c-64ec-49e3-a757-b5c1e83b1b10 -NonStateChangingEventPortName:\\UMDFCommunicationPorts\\WUDF\\HostProcess-cc70b950-0f15-4e51-ac2a-82275315674e -LifetimeId:a12ed8e7-c6ff-4d33-ad10-8b80488e8630 -DeviceGroupId:WpdFsGroup",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "32"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "34"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "50"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "73"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "32"
+      }
+    ]
+  },
+  {
+    "process_id": "1748:0xffff800cfe921580:2023-05-25T18:53:56+00:00",
+    "pid": 1748,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe921580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k networkservice -p -s NlaSvc",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "33"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "35"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "65"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "78"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "33"
+      }
+    ]
+  },
+  {
+    "process_id": "1812:0xffff800cfe93f580:2023-05-25T18:53:56+00:00",
+    "pid": 1812,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe93f580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k netsvcs -p -s SENS",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "34"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "36"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "71"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "26"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "34"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:56+00:00",
+    "eprocess": "0xffff800cfe93e400",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k networkservice -p -s Dnscache",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "35"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "37"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "70"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "29"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "35"
+      }
+    ]
+  },
+  {
+    "process_id": "1928:0xffff800cfe935580:2023-05-25T18:53:57+00:00",
+    "pid": 1928,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:57+00:00",
+    "eprocess": "0xffff800cfe935580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localsystemnetworkrestricted -p -s AudioEndpointBuilder",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "36"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "40"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "69"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "17"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "36"
+      }
+    ]
+  },
+  {
+    "process_id": "1944:0xffff800cfe931580:2023-05-25T18:53:57+00:00",
+    "pid": 1944,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:57+00:00",
+    "eprocess": "0xffff800cfe931580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localservice -p -s FontCache",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "37"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "41"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "68"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "28"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "37"
+      }
+    ]
+  },
+  {
+    "process_id": "1980:0xffff800cfe92f580:2023-05-25T18:53:57+00:00",
+    "pid": 1980,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:57+00:00",
+    "eprocess": "0xffff800cfe92f580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localservice -p -s netprofm",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "38"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "42"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "67"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "51"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "38"
+      }
+    ]
+  },
+  {
+    "process_id": "2052:0xffff800cfe927580:2023-05-25T18:53:57+00:00",
+    "pid": 2052,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:57+00:00",
+    "eprocess": "0xffff800cfe927580",
+    "command_line": "C:\\Windows\\System32\\svchost.exe -k LocalServiceNetworkRestricted -p",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "39"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "43"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "66"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "10"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "39"
+      }
+    ]
+  },
+  {
+    "process_id": "2136:0xffff800cfe248580:2023-05-25T18:53:57+00:00",
+    "pid": 2136,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:57+00:00",
+    "eprocess": "0xffff800cfe248580",
+    "command_line": "C:\\Windows\\system32\\svchost.exe -k LocalServiceNetworkRestricted -p",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "40"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "44"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "26"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "82"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "40"
+      }
+    ]
+  },
+  {
+    "process_id": "2144:0xffff800cfe296580:2023-05-25T18:53:57+00:00",
+    "pid": 2144,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:57+00:00",
+    "eprocess": "0xffff800cfe296580",
+    "command_line": "C:\\Windows\\System32\\svchost.exe -k LocalServiceNetworkRestricted -p",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "41"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "45"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "31"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "89"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "41"
+      }
+    ]
+  },
+  {
+    "process_id": "2220:0xffff800cfe294580:2023-05-25T18:53:57+00:00",
+    "pid": 2220,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:57+00:00",
+    "eprocess": "0xffff800cfe294580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k netsvcs -p -s ShellHWDetection",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "42"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "46"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "30"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "36"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "42"
+      }
+    ]
+  },
+  {
+    "process_id": "2316:0xffff800cfe2f2580:2023-05-25T18:53:57+00:00",
+    "pid": 2316,
+    "name": "spoolsv.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:57+00:00",
+    "eprocess": "0xffff800cfe2f2580",
+    "command_line": "C:\\Windows\\System32\\spoolsv.exe",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "43"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "47"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "32"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "18"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "43"
+      }
+    ]
+  },
+  {
+    "process_id": "2332:0xffff800cfe28e580:2023-05-25T18:53:57+00:00",
+    "pid": 2332,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:57+00:00",
+    "eprocess": "0xffff800cfe28e580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localservicenetworkrestricted -p -s WinHttpAutoProxySvc",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "44"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "48"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "29"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "30"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "44"
+      }
+    ]
+  },
+  {
+    "process_id": "2392:0xffff800cfe28c580:2023-05-25T18:53:57+00:00",
+    "pid": 2392,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:57+00:00",
+    "eprocess": "0xffff800cfe28c580",
+    "command_line": "C:\\Windows\\system32\\svchost.exe -k LocalService -p",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "45"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "49"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "28"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "83"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "45"
+      }
+    ]
+  },
+  {
+    "process_id": "2408:0xffff800cfe286580:2023-05-25T18:53:57+00:00",
+    "pid": 2408,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:57+00:00",
+    "eprocess": "0xffff800cfe286580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k networkservice -p -s LanmanWorkstation",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "46"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "50"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "27"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "92"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "46"
+      }
+    ]
+  },
+  {
+    "process_id": "2732:0xffff800cfe04e580:2023-05-25T18:53:57+00:00",
+    "pid": 2732,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:57+00:00",
+    "eprocess": "0xffff800cfe04e580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localservicenonetwork -p -s DPS",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "47"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "51"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "23"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "37"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "47"
+      }
+    ]
+  },
+  {
+    "process_id": "2740:0xffff800cfe04c580:2023-05-25T18:53:57+00:00",
+    "pid": 2740,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:57+00:00",
+    "eprocess": "0xffff800cfe04c580",
+    "command_line": "C:\\Windows\\System32\\svchost.exe -k utcsvc -p",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "48"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "52"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "22"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "42"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "48"
+      }
+    ]
+  },
+  {
+    "process_id": "2764:0xffff800cfde29300:2023-05-25T18:53:57+00:00",
+    "pid": 2764,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:57+00:00",
+    "eprocess": "0xffff800cfde29300",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k netsvcs -p -s Winmgmt",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "49"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "53"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "12"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "74"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "49"
+      }
+    ]
+  },
+  {
+    "process_id": "2772:0xffff800cfe048580:2023-05-25T18:53:57+00:00",
+    "pid": 2772,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:57+00:00",
+    "eprocess": "0xffff800cfe048580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k netsvcs -p -s LanmanServer",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "50"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "54"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "21"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "79"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "50"
+      }
+    ]
+  },
+  {
+    "process_id": "2780:0xffff800cfe046580:2023-05-25T18:53:57+00:00",
+    "pid": 2780,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:57+00:00",
+    "eprocess": "0xffff800cfe046580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k networkservice -p -s CryptSvc",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "51"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "55"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "20"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "86"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "51"
+      }
+    ]
+  },
+  {
+    "process_id": "2796:0xffff800cfde23080:2023-05-25T18:53:57+00:00",
+    "pid": 2796,
+    "name": "SecurityHealth",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:57+00:00",
+    "eprocess": "0xffff800cfde23080",
+    "command_line": "C:\\Windows\\system32\\SecurityHealthService.exe",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "52"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "56"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "11"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "95"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "52"
+      }
+    ]
+  },
+  {
+    "process_id": "2808:0xffff800cfe042580:2023-05-25T18:53:58+00:00",
+    "pid": 2808,
+    "name": "VGAuthService.",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:58+00:00",
+    "eprocess": "0xffff800cfe042580",
+    "command_line": "\"C:\\Program Files\\VMware\\VMware Tools\\VMware VGAuth\\VGAuthService.exe\"",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "53"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "57"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "19"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "41"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "53"
+      }
+    ]
+  },
+  {
+    "process_id": "2820:0xffff800cfe03e580:2023-05-25T18:53:58+00:00",
+    "pid": 2820,
+    "name": "vmtoolsd.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:58+00:00",
+    "eprocess": "0xffff800cfe03e580",
+    "command_line": "\"C:\\Program Files\\VMware\\VMware Tools\\vmtoolsd.exe\"",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "54"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "58"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "17"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "11"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "54"
+      }
+    ]
+  },
+  {
+    "process_id": "2828:0xffff800cfe03c580:2023-05-25T18:53:58+00:00",
+    "pid": 2828,
+    "name": "vm3dservice.ex",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:58+00:00",
+    "eprocess": "0xffff800cfe03c580",
+    "command_line": "C:\\Windows\\system32\\vm3dservice.exe",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "55"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "59"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "16"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "19"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "55"
+      }
+    ]
+  },
+  {
+    "process_id": "2836:0xffff800cfe040580:2023-05-25T18:53:58+00:00",
+    "pid": 2836,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:58+00:00",
+    "eprocess": "0xffff800cfe040580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localsystemnetworkrestricted -p -s TrkWks",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "56"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "60"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "18"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "27"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "56"
+      }
+    ]
+  },
+  {
+    "process_id": "2860:0xffff800cfe03a580:2023-05-25T18:53:58+00:00",
+    "pid": 2860,
+    "name": "MsMpEng.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:58+00:00",
+    "eprocess": "0xffff800cfe03a580",
+    "command_line": "\"C:\\Program Files\\Windows Defender\\MsMpEng.exe\"",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "57"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "61"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "15"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "38"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "57"
+      }
+    ]
+  },
+  {
+    "process_id": "2908:0xffff800cfe038580:2023-05-25T18:53:58+00:00",
+    "pid": 2908,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:58+00:00",
+    "eprocess": "0xffff800cfe038580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k netsvcs -p -s WpnService",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "58"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "62"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "14"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "87"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "58"
+      }
+    ]
+  },
+  {
+    "process_id": "3000:0xffff800cfe17e380:2023-05-25T18:53:58+00:00",
+    "pid": 3000,
+    "name": "vm3dservice.ex",
+    "ppid": 2828,
+    "creation_time": "2023-05-25T18:53:58+00:00",
+    "eprocess": "0xffff800cfe17e380",
+    "command_line": "vm3dservice.exe -n",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "59"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "65"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "24"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "20"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "59"
+      }
+    ]
+  },
+  {
+    "process_id": "3052:0xffff800cfe1a7580:2023-05-25T18:53:58+00:00",
+    "pid": 3052,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:58+00:00",
+    "eprocess": "0xffff800cfe1a7580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k netsvcs -p -s iphlpsvc",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "60"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "66"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "25"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "96"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "60"
+      }
+    ]
+  },
+  {
+    "process_id": "3060:0xffff800cfe034580:2023-05-25T18:53:58+00:00",
+    "pid": 3060,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:58+00:00",
+    "eprocess": "0xffff800cfe034580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localservice -p -s WdiServiceHost",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "61"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "67"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "13"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "101"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "61"
+      }
+    ]
+  },
+  {
+    "process_id": "3648:0xffff800cfee01580:2023-05-25T18:53:58+00:00",
+    "pid": 3648,
+    "name": "dllhost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:58+00:00",
+    "eprocess": "0xffff800cfee01580",
+    "command_line": "C:\\Windows\\system32\\dllhost.exe /Processid:{02D4B3F1-FD88-11D1-960D-00805FC79235}",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "62"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "70"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "75"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "71"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "62"
+      }
+    ]
+  },
+  {
+    "process_id": "3716:0xffff800cfee1f580:2023-05-25T18:53:58+00:00",
+    "pid": 3716,
+    "name": "sihost.exe",
+    "ppid": 1416,
+    "creation_time": "2023-05-25T18:53:58+00:00",
+    "eprocess": "0xffff800cfee1f580",
+    "command_line": "sihost.exe",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "63"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "71"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "79"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "15"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "63"
+      }
+    ]
+  },
+  {
+    "process_id": "3748:0xffff800cfee67340:2023-05-25T18:53:58+00:00",
+    "pid": 3748,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:58+00:00",
+    "eprocess": "0xffff800cfee67340",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k unistacksvcgroup -s CDPUserSvc",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "64"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "72"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "80"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "35"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "64"
+      }
+    ]
+  },
+  {
+    "process_id": "3792:0xffff800cfee19580:2023-05-25T18:53:58+00:00",
+    "pid": 3792,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:58+00:00",
+    "eprocess": "0xffff800cfee19580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k unistacksvcgroup -s WpnUserService",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "65"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "73"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "78"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "77"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "65"
+      }
+    ]
+  },
+  {
+    "process_id": "3932:0xffff800cfee15580:2023-05-25T18:53:58+00:00",
+    "pid": 3932,
+    "name": "taskhostw.exe",
+    "ppid": 1208,
+    "creation_time": "2023-05-25T18:53:58+00:00",
+    "eprocess": "0xffff800cfee15580",
+    "command_line": "taskhostw.exe {222A245B-E637-4AE9-A93F-A59CA119A75E}",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "66"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "74"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "77"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "47"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "66"
+      }
+    ]
+  },
+  {
+    "process_id": "3988:0xffff800cfc0ef580:2023-05-25T18:53:58+00:00",
+    "pid": 3988,
+    "name": "WmiPrvSE.exe",
+    "ppid": 832,
+    "creation_time": "2023-05-25T18:53:58+00:00",
+    "eprocess": "0xffff800cfc0ef580",
+    "command_line": "C:\\Windows\\system32\\wbem\\wmiprvse.exe",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "67"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "75"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "5"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "68"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "67"
+      }
+    ]
+  },
+  {
+    "process_id": "4000:0xffff800cfc0ee580:2023-05-25T18:53:58+00:00",
+    "pid": 4000,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:58+00:00",
+    "eprocess": "0xffff800cfc0ee580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k netsvcs -p -s TokenBroker",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "68"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "76"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "4"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "33"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "68"
+      }
+    ]
+  },
+  {
+    "process_id": "4092:0xffff800cfecd4580:2023-05-25T18:53:59+00:00",
+    "pid": 4092,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:59+00:00",
+    "eprocess": "0xffff800cfecd4580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localsystemnetworkrestricted -p -s TabletInputService",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "69"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "77"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "74"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "97"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "69"
+      }
+    ]
+  },
+  {
+    "process_id": "3544:0xffff800cfee11580:2023-05-25T18:53:59+00:00",
+    "pid": 3544,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:59+00:00",
+    "eprocess": "0xffff800cfee11580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k appmodel -p -s StateRepository",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "70"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "68"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "76"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "84"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "70"
+      }
+    ]
+  },
+  {
+    "process_id": "3556:0xffff800cfefca340:2023-05-25T18:53:59+00:00",
+    "pid": 3556,
+    "name": "ctfmon.exe",
+    "ppid": 4092,
+    "creation_time": "2023-05-25T18:53:59+00:00",
+    "eprocess": "0xffff800cfefca340",
+    "command_line": "\"ctfmon.exe\"",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "71"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "69"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "82"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "98"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "71"
+      }
+    ]
+  },
+  {
+    "process_id": "4416:0xffff800cfbf34580:2023-05-25T18:53:59+00:00",
+    "pid": 4416,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:59+00:00",
+    "eprocess": "0xffff800cfbf34580",
+    "command_line": "C:\\Windows\\System32\\svchost.exe -k wsappx -p -s ClipSVC",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "72"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "79"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "1"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "72"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "72"
+      }
+    ]
+  },
+  {
+    "process_id": "4440:0xffff800cff113580:2023-05-25T18:53:59+00:00",
+    "pid": 4440,
+    "name": "msdtc.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:53:59+00:00",
+    "eprocess": "0xffff800cff113580",
+    "command_line": "C:\\Windows\\System32\\msdtc.exe",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "73"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "80"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "84"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "85"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "73"
+      }
+    ]
+  },
+  {
+    "process_id": "4456:0xffff800cff133580:2023-05-25T18:53:59+00:00",
+    "pid": 4456,
+    "name": "userinit.exe",
+    "ppid": 608,
+    "creation_time": "2023-05-25T18:53:59+00:00",
+    "eprocess": "0xffff800cff133580",
+    "command_line": null,
+    "exit_time": "2023-05-25T18:54:23+00:00",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "74"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "87"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "109"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "74"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "name": "explorer.exe",
+    "ppid": 4456,
+    "creation_time": "2023-05-25T18:54:00+00:00",
+    "eprocess": "0xffff800cff12f580",
+    "command_line": "C:\\Windows\\Explorer.EXE",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "75"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "81"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "86"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "110"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "75"
+      }
+    ]
+  },
+  {
+    "process_id": "4616:0xffff800cff12b580:2023-05-25T18:54:00+00:00",
+    "pid": 4616,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:54:00+00:00",
+    "eprocess": "0xffff800cff12b580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localsystemnetworkrestricted -p -s WdiSystemHost",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "76"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "82"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "85"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "21"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "76"
+      }
+    ]
+  },
+  {
+    "process_id": "4716:0xffff800cff1ed080:2023-05-25T18:54:00+00:00",
+    "pid": 4716,
+    "name": "taskhostw.exe",
+    "ppid": 1208,
+    "creation_time": "2023-05-25T18:54:00+00:00",
+    "eprocess": "0xffff800cff1ed080",
+    "command_line": "taskhostw.exe",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "77"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "83"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "88"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "46"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "77"
+      }
+    ]
+  },
+  {
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "name": "ShellExperienc",
+    "ppid": 832,
+    "creation_time": "2023-05-25T18:54:01+00:00",
+    "eprocess": "0xffff800cff346080",
+    "command_line": "\"C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe\" -ServerName:App.AppXtk181tbxbce2qsex02s8tw7hfxa9xb3t.mca",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "78"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "84"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "93"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "69"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "78"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "name": "SearchUI.exe",
+    "ppid": 832,
+    "creation_time": "2023-05-25T18:54:01+00:00",
+    "eprocess": "0xffff800cff483080",
+    "command_line": "\"C:\\Windows\\SystemApps\\Microsoft.Windows.Cortana_cw5n1h2txyewy\\SearchUI.exe\" -ServerName:CortanaUI.AppXa50dqqa5gqv4a428c9y1jjw7m3btvepj.mca",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "79"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "85"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "95"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "63"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "79"
+      }
+    ]
+  },
+  {
+    "process_id": "5560:0xffff800cfecb6580:2023-05-25T18:54:02+00:00",
+    "pid": 5560,
+    "name": "NisSrv.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:54:02+00:00",
+    "eprocess": "0xffff800cfecb6580",
+    "command_line": "\"C:\\Program Files\\Windows Defender\\NisSrv.exe\"",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "80"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "86"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "72"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "49"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "80"
+      }
+    ]
+  },
+  {
+    "process_id": "5720:0xffff800cfecb9580:2023-05-25T18:54:02+00:00",
+    "pid": 5720,
+    "name": "RuntimeBroker.",
+    "ppid": 832,
+    "creation_time": "2023-05-25T18:54:02+00:00",
+    "eprocess": "0xffff800cfecb9580",
+    "command_line": "C:\\Windows\\System32\\RuntimeBroker.exe -Embedding",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "81"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "87"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "73"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "61"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "81"
+      }
+    ]
+  },
+  {
+    "process_id": "5836:0xffff800cff4cc580:2023-05-25T18:54:02+00:00",
+    "pid": 5836,
+    "name": "RuntimeBroker.",
+    "ppid": 832,
+    "creation_time": "2023-05-25T18:54:02+00:00",
+    "eprocess": "0xffff800cff4cc580",
+    "command_line": "C:\\Windows\\System32\\RuntimeBroker.exe -Embedding",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "82"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "88"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "98"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "62"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "82"
+      }
+    ]
+  },
+  {
+    "process_id": "5844:0xffff800cff4b8580:2023-05-25T18:54:02+00:00",
+    "pid": 5844,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:54:02+00:00",
+    "eprocess": "0xffff800cff4b8580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k netsvcs -p",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "83"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "89"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "97"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "80"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "83"
+      }
+    ]
+  },
+  {
+    "process_id": "4312:0xffff800cff67c580:2023-05-25T18:54:02+00:00",
+    "pid": 4312,
+    "name": "ApplicationFra",
+    "ppid": 832,
+    "creation_time": "2023-05-25T18:54:02+00:00",
+    "eprocess": "0xffff800cff67c580",
+    "command_line": "C:\\Windows\\system32\\ApplicationFrameHost.exe -Embedding",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "84"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "78"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "103"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "70"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "84"
+      }
+    ]
+  },
+  {
+    "process_id": "6212:0xffff800cff72f080:2023-05-25T18:54:03+00:00",
+    "pid": 6212,
+    "name": "SkypeHost.exe",
+    "ppid": 832,
+    "creation_time": "2023-05-25T18:54:03+00:00",
+    "eprocess": "0xffff800cff72f080",
+    "command_line": "\"C:\\Program Files\\WindowsApps\\Microsoft.SkypeApp_12.13.274.0_x64__kzf8qxf38zg5c\\SkypeHost.exe\" -ServerName:SkypeHost.ServerServer",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "85"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "91"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "109"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "56"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "85"
+      }
+    ]
+  },
+  {
+    "process_id": "6336:0xffff800cff208080:2023-05-25T18:54:03+00:00",
+    "pid": 6336,
+    "name": "MicrosoftEdge.",
+    "ppid": 832,
+    "creation_time": "2023-05-25T18:54:03+00:00",
+    "eprocess": "0xffff800cff208080",
+    "command_line": "\"C:\\Windows\\SystemApps\\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\\MicrosoftEdge.exe\" -ServerName:MicrosoftEdge.AppXdnhjhccw3zf0j06tkg3jtqr00qdm0khc.mca",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "86"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "92"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "89"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "54"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "86"
+      }
+    ]
+  },
+  {
+    "process_id": "6512:0xffff800cff83c580:2023-05-25T18:54:03+00:00",
+    "pid": 6512,
+    "name": "RuntimeBroker.",
+    "ppid": 832,
+    "creation_time": "2023-05-25T18:54:03+00:00",
+    "eprocess": "0xffff800cff83c580",
+    "command_line": "C:\\Windows\\System32\\RuntimeBroker.exe -Embedding",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "87"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "94"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "112"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "66"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "87"
+      }
+    ]
+  },
+  {
+    "process_id": "6532:0xffff800cff877580:2023-05-25T18:54:03+00:00",
+    "pid": 6532,
+    "name": "browser_broker",
+    "ppid": 832,
+    "creation_time": "2023-05-25T18:54:03+00:00",
+    "eprocess": "0xffff800cff877580",
+    "command_line": "C:\\Windows\\system32\\browser_broker.exe -Embedding",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "88"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "95"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "113"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "57"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "88"
+      }
+    ]
+  },
+  {
+    "process_id": "6692:0xffff800cff8dd580:2023-05-25T18:54:03+00:00",
+    "pid": 6692,
+    "name": "RuntimeBroker.",
+    "ppid": 832,
+    "creation_time": "2023-05-25T18:54:03+00:00",
+    "eprocess": "0xffff800cff8dd580",
+    "command_line": "C:\\Windows\\System32\\RuntimeBroker.exe -Embedding",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "89"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "96"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "115"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "58"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "89"
+      }
+    ]
+  },
+  {
+    "process_id": "6828:0xffff800cff95d080:2023-05-25T18:54:03+00:00",
+    "pid": 6828,
+    "name": "MicrosoftEdgeC",
+    "ppid": 832,
+    "creation_time": "2023-05-25T18:54:03+00:00",
+    "eprocess": "0xffff800cff95d080",
+    "command_line": "\"C:\\Windows\\SystemApps\\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\\MicrosoftEdgeCP.exe\" -ServerName:ContentProcess.AppX6z3cwk4fvgady6zya12j1cw28d228a7k.mca",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "90"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "97"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "117"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "64"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "90"
+      }
+    ]
+  },
+  {
+    "process_id": "6856:0xffff800cff959080:2023-05-25T18:54:03+00:00",
+    "pid": 6856,
+    "name": "MicrosoftEdgeC",
+    "ppid": 832,
+    "creation_time": "2023-05-25T18:54:03+00:00",
+    "eprocess": "0xffff800cff959080",
+    "command_line": "\"C:\\Windows\\SystemApps\\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\\MicrosoftEdgeCP.exe\" -ServerName:ContentProcess.AppX6z3cwk4fvgady6zya12j1cw28d228a7k.mca",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "91"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "98"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "116"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "59"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "91"
+      }
+    ]
+  },
+  {
+    "process_id": "7128:0xffff800cfe6b9080:2023-05-25T18:54:04+00:00",
+    "pid": 7128,
+    "name": "SearchIndexer.",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:54:04+00:00",
+    "eprocess": "0xffff800cfe6b9080",
+    "command_line": "C:\\Windows\\system32\\SearchIndexer.exe /Embedding",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "92"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "99"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "46"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "88"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "92"
+      }
+    ]
+  },
+  {
+    "process_id": "1004:0xffff800cffabe580:2023-05-25T18:54:04+00:00",
+    "pid": 1004,
+    "name": "smartscreen.ex",
+    "ppid": 832,
+    "creation_time": "2023-05-25T18:54:04+00:00",
+    "eprocess": "0xffff800cffabe580",
+    "command_line": "C:\\Windows\\System32\\smartscreen.exe -Embedding",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "93"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "18"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "121"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "65"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "93"
+      }
+    ]
+  },
+  {
+    "process_id": "8148:0xffff800cffc42580:2023-05-25T18:54:08+00:00",
+    "pid": 8148,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:54:08+00:00",
+    "eprocess": "0xffff800cffc42580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localservice -p -s CDPSvc",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "94"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "106"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "124"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "81"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "94"
+      }
+    ]
+  },
+  {
+    "process_id": "8032:0xffff800cffdb7580:2023-05-25T18:54:10+00:00",
+    "pid": 8032,
+    "name": "RuntimeBroker.",
+    "ppid": 832,
+    "creation_time": "2023-05-25T18:54:10+00:00",
+    "eprocess": "0xffff800cffdb7580",
+    "command_line": "C:\\Windows\\System32\\RuntimeBroker.exe -Embedding",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "95"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "104"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "129"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "55"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "95"
+      }
+    ]
+  },
+  {
+    "process_id": "7352:0xffff800cffe50300:2023-05-25T18:54:11+00:00",
+    "pid": 7352,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:54:11+00:00",
+    "eprocess": "0xffff800cffe50300",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k unistacksvcgroup",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "96"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "100"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "130"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "50"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "96"
+      }
+    ]
+  },
+  {
+    "process_id": "8372:0xffff800cff708580:2023-05-25T18:54:14+00:00",
+    "pid": 8372,
+    "name": "MSASCuiL.exe",
+    "ppid": 4520,
+    "creation_time": "2023-05-25T18:54:14+00:00",
+    "eprocess": "0xffff800cff708580",
+    "command_line": "\"C:\\Program Files\\Windows Defender\\MSASCuiL.exe\" ",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "97"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "107"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "107"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "118"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "97"
+      }
+    ]
+  },
+  {
+    "process_id": "8504:0xffff800cff734580:2023-05-25T18:54:14+00:00",
+    "pid": 8504,
+    "name": "vmtoolsd.exe",
+    "ppid": 4520,
+    "creation_time": "2023-05-25T18:54:14+00:00",
+    "eprocess": "0xffff800cff734580",
+    "command_line": "\"C:\\Program Files\\VMware\\VMware Tools\\vmtoolsd.exe\" -n vmusr",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "98"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "108"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "110"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "119"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "98"
+      }
+    ]
+  },
+  {
+    "process_id": "8588:0xffff800cffe7a580:2023-05-25T18:54:15+00:00",
+    "pid": 8588,
+    "name": "OneDrive.exe",
+    "ppid": 4520,
+    "creation_time": "2023-05-25T18:54:15+00:00",
+    "eprocess": "0xffff800cffe7a580",
+    "command_line": "\"C:\\Users\\user1\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe\" /background",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "99"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "109"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "131"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "115"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "99"
+      }
+    ]
+  },
+  {
+    "process_id": "8876:0xffff800cfffc5580:2023-05-25T18:54:18+00:00",
+    "pid": 8876,
+    "name": "WmiPrvSE.exe",
+    "ppid": 832,
+    "creation_time": "2023-05-25T18:54:18+00:00",
+    "eprocess": "0xffff800cfffc5580",
+    "command_line": "C:\\Windows\\system32\\wbem\\wmiprvse.exe",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "100"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "111"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "133"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "67"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "100"
+      }
+    ]
+  },
+  {
+    "process_id": "8944:0xffff800cff3cb580:2023-05-25T18:54:19+00:00",
+    "pid": 8944,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:54:19+00:00",
+    "eprocess": "0xffff800cff3cb580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k netsvcs -p -s BITS",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "101"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "112"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "94"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "100"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "101"
+      }
+    ]
+  },
+  {
+    "process_id": "9012:0xffff800cfffc2580:2023-05-25T18:54:19+00:00",
+    "pid": 9012,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:54:19+00:00",
+    "eprocess": "0xffff800cfffc2580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localserviceandnoimpersonation -p -s SSDPSRV",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "102"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "113"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "132"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "43"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "102"
+      }
+    ]
+  },
+  {
+    "process_id": "1000:0xffff800cff295080:2023-05-25T18:55:58+00:00",
+    "pid": 1000,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:55:58+00:00",
+    "eprocess": "0xffff800cff295080",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localsystemnetworkrestricted -p -s fhsvc",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "103"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "17"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "92"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "93"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "103"
+      }
+    ]
+  },
+  {
+    "process_id": "6124:0xffff800cfef90080:2023-05-25T18:55:58+00:00",
+    "pid": 6124,
+    "name": "SgrmBroker.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:55:58+00:00",
+    "eprocess": "0xffff800cfef90080",
+    "command_line": "C:\\Windows\\system32\\SgrmBroker.exe",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "104"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "90"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "81"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "99"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "104"
+      }
+    ]
+  },
+  {
+    "process_id": "7596:0xffff800cff294080:2023-05-25T18:55:59+00:00",
+    "pid": 7596,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:55:59+00:00",
+    "eprocess": "0xffff800cff294080",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localservicenetworkrestricted -p -s wscsvc",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "105"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "101"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "91"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "39"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "105"
+      }
+    ]
+  },
+  {
+    "process_id": "7708:0xffff800cff222080:2023-05-25T18:57:07+00:00",
+    "pid": 7708,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:57:07+00:00",
+    "eprocess": "0xffff800cff222080",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k netsvcs -p -s Appinfo",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "106"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "102"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "90"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "31"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "106"
+      }
+    ]
+  },
+  {
+    "process_id": "1908:0xffff800cffd5d080:2023-05-25T18:57:09+00:00",
+    "pid": 1908,
+    "name": "Agent.exe",
+    "ppid": 4520,
+    "creation_time": "2023-05-25T18:57:09+00:00",
+    "eprocess": "0xffff800cffd5d080",
+    "command_line": null,
+    "exit_time": "2023-05-25T18:57:09+00:00",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "107"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "125"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "116"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "107"
+      }
+    ]
+  },
+  {
+    "process_id": "1848:0xffff800cff998580:2023-05-25T18:57:09+00:00",
+    "pid": 1848,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T18:57:09+00:00",
+    "eprocess": "0xffff800cff998580",
+    "command_line": "c:\\windows\\system32\\svchost.exe -k localsystemnetworkrestricted -p -s PcaSvc",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "108"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "38"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "118"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "52"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "108"
+      }
+    ]
+  },
+  {
+    "process_id": "356:0xffff800cff0ab580:2023-05-25T18:57:09+00:00",
+    "pid": 356,
+    "name": "notepad.exe",
+    "ppid": 1908,
+    "creation_time": "2023-05-25T18:57:09+00:00",
+    "eprocess": "0xffff800cff0ab580",
+    "command_line": null,
+    "exit_time": "2023-05-25T19:04:10+00:00",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "109"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "83"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "117"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "109"
+      }
+    ]
+  },
+  {
+    "process_id": "8388:0xffff800cff9a6580:2023-05-25T19:00:15+00:00",
+    "pid": 8388,
+    "name": "notepad.exe",
+    "ppid": 4520,
+    "creation_time": "2023-05-25T19:00:15+00:00",
+    "eprocess": "0xffff800cff9a6580",
+    "command_line": null,
+    "exit_time": "2023-05-25T19:00:17+00:00",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "110"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "119"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "111"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "110"
+      }
+    ]
+  },
+  {
+    "process_id": "8840:0xffff800cfbf38580:2023-05-25T19:00:58+00:00",
+    "pid": 8840,
+    "name": "dllhost.exe",
+    "ppid": 832,
+    "creation_time": "2023-05-25T19:00:58+00:00",
+    "eprocess": "0xffff800cfbf38580",
+    "command_line": "C:\\Windows\\system32\\DllHost.exe /Processid:{973D20D7-562D-44B9-B70B-5A0F49CCDF3F}",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "111"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "110"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "2"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "60"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "111"
+      }
+    ]
+  },
+  {
+    "process_id": "2952:0xffff800cffdb5580:2023-05-25T19:01:04+00:00",
+    "pid": 2952,
+    "name": "cmd.exe",
+    "ppid": 4520,
+    "creation_time": "2023-05-25T19:01:04+00:00",
+    "eprocess": "0xffff800cffdb5580",
+    "command_line": "\"C:\\Windows\\system32\\cmd.exe\" ",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "112"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "63"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "128"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "112"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "112"
+      }
+    ]
+  },
+  {
+    "process_id": "2964:0xffff800cff684580:2023-05-25T19:01:04+00:00",
+    "pid": 2964,
+    "name": "conhost.exe",
+    "ppid": 2952,
+    "creation_time": "2023-05-25T19:01:04+00:00",
+    "eprocess": "0xffff800cff684580",
+    "command_line": "\\??\\C:\\Windows\\system32\\conhost.exe 0x4",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "113"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "64"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "104"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "114"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "113"
+      }
+    ]
+  },
+  {
+    "process_id": "2024:0xffff800cfca62580:2023-05-25T19:02:57+00:00",
+    "pid": 2024,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T19:02:57+00:00",
+    "eprocess": "0xffff800cfca62580",
+    "command_line": null,
+    "exit_time": "2023-05-25T19:03:02+00:00",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "114"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "6"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "94"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "114"
+      }
+    ]
+  },
+  {
+    "process_id": "1888:0xffff800cff717080:2023-05-25T19:02:57+00:00",
+    "pid": 1888,
+    "name": "OneDriveStanda",
+    "ppid": 1208,
+    "creation_time": "2023-05-25T19:02:57+00:00",
+    "eprocess": "0xffff800cff717080",
+    "command_line": "C:\\Users\\user1\\AppData\\Local\\Microsoft\\OneDrive\\OneDriveStandaloneUpdater.exe",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "115"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "39"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "108"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "48"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "115"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T19:03:18+00:00",
+    "eprocess": "0xffff800cff5cd580",
+    "command_line": "C:\\Windows\\system32\\svchost.exe -k wsappx -p -s AppXSvc",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "116"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "114"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "101"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "23"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "116"
+      }
+    ]
+  },
+  {
+    "process_id": "6500:0xffff800cffdac080:2023-05-25T19:03:21+00:00",
+    "pid": 6500,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T19:03:21+00:00",
+    "eprocess": "0xffff800cffdac080",
+    "command_line": "C:\\Windows\\System32\\svchost.exe -k smphost",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "117"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "93"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "127"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "91"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "117"
+      }
+    ]
+  },
+  {
+    "process_id": "8064:0xffff800cffc18580:2023-05-25T19:03:58+00:00",
+    "pid": 8064,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T19:03:58+00:00",
+    "eprocess": "0xffff800cffc18580",
+    "command_line": "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s gpsvc",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "118"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "105"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "123"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "8"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "118"
+      }
+    ]
+  },
+  {
+    "process_id": "7912:0xffff800cff521080:2023-05-25T19:06:57+00:00",
+    "pid": 7912,
+    "name": "DumpIt.exe",
+    "ppid": 2952,
+    "creation_time": "2023-05-25T19:06:57+00:00",
+    "eprocess": "0xffff800cff521080",
+    "command_line": "DumpIt.exe  ransomcare.dmp",
+    "exit_time": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pslist",
+        "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+        "record_id": "119"
+      },
+      {
+        "backend": "memprocfs",
+        "plugin": "processes",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+        "record_id": "103"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "99"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "pstree",
+        "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+        "record_id": "113"
+      },
+      {
+        "backend": "volatility",
+        "plugin": "cmdline",
+        "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+        "record_id": "119"
+      }
+    ]
+  },
+  {
+    "process_id": "6472:0xffff800cfcab8080:2023-05-25T19:05:41+00:00",
+    "pid": 6472,
+    "name": "rundll32.exe",
+    "ppid": 832,
+    "creation_time": "2023-05-25T19:05:41+00:00",
+    "eprocess": "0xffff800cfcab8080",
+    "command_line": null,
+    "exit_time": "2023-05-25T19:05:41+00:00",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "7"
+      }
+    ]
+  },
+  {
+    "process_id": "2068:0xffff800cfd07c580:2023-05-25T19:03:24+00:00",
+    "pid": 2068,
+    "name": "WmiPrvSE.exe",
+    "ppid": 832,
+    "creation_time": "2023-05-25T19:03:24+00:00",
+    "eprocess": "0xffff800cfd07c580",
+    "command_line": null,
+    "exit_time": "2023-05-25T19:04:25+00:00",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "8"
+      }
+    ]
+  },
+  {
+    "process_id": "6756:0xffff800cfe6d64c0:2023-05-25T19:04:01+00:00",
+    "pid": 6756,
+    "name": "MpCmdRun.exe",
+    "ppid": 2860,
+    "creation_time": "2023-05-25T19:04:01+00:00",
+    "eprocess": "0xffff800cfe6d64c0",
+    "command_line": null,
+    "exit_time": "2023-05-25T19:04:01+00:00",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "48"
+      }
+    ]
+  },
+  {
+    "process_id": "4976:0xffff800cfe806340:2023-05-25T19:05:10+00:00",
+    "pid": 4976,
+    "name": "DumpIt.exe",
+    "ppid": 2952,
+    "creation_time": "2023-05-25T19:05:10+00:00",
+    "eprocess": "0xffff800cfe806340",
+    "command_line": null,
+    "exit_time": "2023-05-25T19:05:10+00:00",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "62"
+      }
+    ]
+  },
+  {
+    "process_id": "1628:0xffff800cff486080:2023-05-25T19:04:01+00:00",
+    "pid": 1628,
+    "name": "MpCmdRun.exe",
+    "ppid": 2860,
+    "creation_time": "2023-05-25T19:04:01+00:00",
+    "eprocess": "0xffff800cff486080",
+    "command_line": null,
+    "exit_time": "2023-05-25T19:04:03+00:00",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "96"
+      }
+    ]
+  },
+  {
+    "process_id": "6624:0xffff800cff5c8080:2023-05-25T19:03:09+00:00",
+    "pid": 6624,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T19:03:09+00:00",
+    "eprocess": "0xffff800cff5c8080",
+    "command_line": null,
+    "exit_time": "2023-05-25T19:04:11+00:00",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "100"
+      }
+    ]
+  },
+  {
+    "process_id": "7500:0xffff800cff5de580:2023-05-25T19:04:03+00:00",
+    "pid": 7500,
+    "name": "MpCmdRun.exe",
+    "ppid": 2860,
+    "creation_time": "2023-05-25T19:04:03+00:00",
+    "eprocess": "0xffff800cff5de580",
+    "command_line": null,
+    "exit_time": "2023-05-25T19:04:03+00:00",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "102"
+      }
+    ]
+  },
+  {
+    "process_id": "1384:0xffff800cff694580:2023-05-25T19:02:57+00:00",
+    "pid": 1384,
+    "name": "CompatTelRunne",
+    "ppid": 1208,
+    "creation_time": "2023-05-25T19:02:57+00:00",
+    "eprocess": "0xffff800cff694580",
+    "command_line": null,
+    "exit_time": "2023-05-25T19:04:21+00:00",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "105"
+      }
+    ]
+  },
+  {
+    "process_id": "5208:0xffff800cff696580:2023-05-25T19:04:10+00:00",
+    "pid": 5208,
+    "name": "conhost.exe",
+    "ppid": 5972,
+    "creation_time": "2023-05-25T19:04:10+00:00",
+    "eprocess": "0xffff800cff696580",
+    "command_line": null,
+    "exit_time": "2023-05-25T19:04:10+00:00",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "106"
+      }
+    ]
+  },
+  {
+    "process_id": "2592:0xffff800cff7b6580:2023-05-25T19:02:57+00:00",
+    "pid": 2592,
+    "name": "conhost.exe",
+    "ppid": 1384,
+    "creation_time": "2023-05-25T19:02:57+00:00",
+    "eprocess": "0xffff800cff7b6580",
+    "command_line": null,
+    "exit_time": "2023-05-25T19:04:21+00:00",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "111"
+      }
+    ]
+  },
+  {
+    "process_id": "5972:0xffff800cff87d580:2023-05-25T19:04:10+00:00",
+    "pid": 5972,
+    "name": "svchost.exe",
+    "ppid": 356,
+    "creation_time": "2023-05-25T19:04:10+00:00",
+    "eprocess": "0xffff800cff87d580",
+    "command_line": null,
+    "exit_time": "2023-05-25T19:04:10+00:00",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "114"
+      }
+    ]
+  },
+  {
+    "process_id": "1996:0xffff800cffab2400:2023-05-25T19:04:03+00:00",
+    "pid": 1996,
+    "name": "conhost.exe",
+    "ppid": 7500,
+    "creation_time": "2023-05-25T19:04:03+00:00",
+    "eprocess": "0xffff800cffab2400",
+    "command_line": null,
+    "exit_time": "2023-05-25T19:04:03+00:00",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "120"
+      }
+    ]
+  },
+  {
+    "process_id": "4852:0xffff800cffbe9080:2023-05-25T19:04:09+00:00",
+    "pid": 4852,
+    "name": "CompatTelRunne",
+    "ppid": 1384,
+    "creation_time": "2023-05-25T19:04:09+00:00",
+    "eprocess": "0xffff800cffbe9080",
+    "command_line": null,
+    "exit_time": "2023-05-25T19:04:21+00:00",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "122"
+      }
+    ]
+  },
+  {
+    "process_id": "6592:0xffff800cffd87080:2023-05-25T19:03:44+00:00",
+    "pid": 6592,
+    "name": "svchost.exe",
+    "ppid": 644,
+    "creation_time": "2023-05-25T19:03:44+00:00",
+    "eprocess": "0xffff800cffd87080",
+    "command_line": null,
+    "exit_time": "2023-05-25T19:07:02+00:00",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "psscan",
+        "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+        "record_id": "126"
+      }
+    ]
+  }
+]

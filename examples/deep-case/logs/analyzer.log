@@ -1,0 +1,54 @@
+2026-10-18 08:39:53,978 INFO Running volatility/info
+2026-10-18 08:39:55,693 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (1.7s)
+2026-10-18 08:39:55,708 INFO Running volatility/pslist
+2026-10-18 08:39:57,468 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (1.8s)
+2026-10-18 08:39:57,490 INFO Running volatility/psscan
+2026-10-18 08:40:08,624 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (11.1s)
+2026-10-18 08:40:08,646 INFO Running volatility/pstree
+2026-10-18 08:40:10,204 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (1.6s)
+2026-10-18 08:40:10,228 INFO Running volatility/cmdline
+2026-10-18 08:40:11,654 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (1.4s)
+2026-10-18 08:40:11,678 INFO Running volatility/netscan
+2026-10-18 08:40:19,237 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (7.5s)
+2026-10-18 08:40:19,258 INFO Running volatility/svcscan
+2026-10-18 08:40:36,017 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (16.8s)
+2026-10-18 08:40:36,041 INFO Running volatility/malfind
+2026-10-18 08:41:06,049 INFO Still running: C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE (30s)
+2026-10-18 08:41:36,050 INFO Still running: C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE (60s)
+2026-10-18 08:41:42,827 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (66.8s)
+2026-10-18 08:41:42,837 INFO Running volatility/dlllist
+2026-10-18 08:41:52,437 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (9.6s)
+2026-10-18 08:41:52,490 INFO Running volatility/ldrmodules
+2026-10-18 08:42:14,357 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (21.9s)
+2026-10-18 08:42:14,404 INFO Running volatility/suspicious_threads
+2026-10-18 08:42:44,414 INFO Still running: C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE (30s)
+2026-10-18 08:43:14,425 INFO Still running: C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE (60s)
+2026-10-18 08:43:31,848 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (77.4s)
+2026-10-18 08:43:31,854 INFO Running volatility/hollowprocesses
+2026-10-18 08:44:01,860 INFO Still running: C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE (30s)
+2026-10-18 08:44:31,861 INFO Still running: C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE (60s)
+2026-10-18 08:44:52,166 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (80.3s)
+2026-10-18 08:44:52,173 INFO Running volatility/processghosting
+2026-10-18 08:45:13,354 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (21.2s)
+2026-10-18 08:45:13,364 INFO Running volatility/pebmasquerade
+2026-10-18 08:45:15,049 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (1.7s)
+2026-10-18 08:45:15,074 INFO Running volatility/callbacks
+2026-10-18 08:45:22,433 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (7.4s)
+2026-10-18 08:45:22,449 INFO Running volatility/modules
+2026-10-18 08:45:23,690 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (1.2s)
+2026-10-18 08:45:23,713 INFO Running volatility/driverirp
+2026-10-18 08:45:32,114 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (8.4s)
+2026-10-18 08:45:32,143 INFO Running volatility/vadinfo
+2026-10-18 08:46:02,160 INFO Still running: C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE (30s)
+2026-10-18 08:46:32,163 INFO Still running: C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE (60s)
+2026-10-18 08:47:01,330 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (89.2s)
+2026-10-18 08:47:01,478 INFO Running volatility/handles
+2026-10-18 08:47:31,483 INFO Still running: C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE (30s)
+2026-10-18 08:47:45,544 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (44.1s)
+2026-10-18 08:47:45,692 INFO Running volatility/threads
+2026-10-18 08:48:03,527 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (17.8s)
+2026-10-18 08:48:03,556 INFO Running volatility/privileges
+2026-10-18 08:48:05,049 INFO Execution C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Scripts\vol.EXE: success (1.5s)
+2026-10-18 08:48:05,084 INFO Running memprocfs/triage
+2026-10-18 08:48:30,514 INFO Execution C:\Users\Administrator\Documents\project\.venv\Scripts\python.exe: success (25.4s)
+2026-10-18 08:48:33,788 INFO Case partial: 134 processes, 147 findings

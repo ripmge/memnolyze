@@ -1,0 +1,14 @@
+   #    PID Process        Type            Address          Description
+-----------------------------------------------------------------------
+0000    356 notepad.exe    PROC_DEBUG      0000000000000000 
+0001   1908 Agent.exe      PROC_DEBUG      0000000000000000 
+0002   2952 cmd.exe        PROC_DEBUG      0000000000000000 
+0003   2964 conhost.exe    PROC_DEBUG      0000000000000000 
+0004   4716 taskhostw.exe  PROC_DEBUG      0000000000000000 
+0005   7912 DumpIt.exe     PROC_DEBUG      0000000000000000 
+0006   4520 explorer.exe   THREAD          00007ff91304f320 TID:5240 SYSTEM_IMPERSONATION
+0007   4520 explorer.exe   THREAD          00007ff91304f320 TID:5268 SYSTEM_IMPERSONATION
+0008   4520 explorer.exe   THREAD          00007ff91304f320 TID:5328 SYSTEM_IMPERSONATION
+0009   5720 RuntimeBroker. THREAD          00007ff90f561fd0 TID:7680 SYSTEM_IMPERSONATION
+000a   5836 RuntimeBroker. THREAD          00007ff7575462b0 TID:5840 SYSTEM_IMPERSONATION
+000b   9100 svchost.exe    PEB_BAD_LDR     0000003fb316f000 

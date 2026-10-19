@@ -1,0 +1,2147 @@
+[
+  {
+    "process_id": "2860:0xffff800cfe03a580:2023-05-25T18:53:58+00:00",
+    "pid": 2860,
+    "category": "memory_injection",
+    "title": "Executable private memory region (malfind)",
+    "address": "0x247b2e90000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "0"
+      }
+    ]
+  },
+  {
+    "process_id": "2860:0xffff800cfe03a580:2023-05-25T18:53:58+00:00",
+    "pid": 2860,
+    "category": "memory_injection",
+    "title": "Executable private memory region (malfind)",
+    "address": "0x247b2d80000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "1"
+      }
+    ]
+  },
+  {
+    "process_id": "2860:0xffff800cfe03a580:2023-05-25T18:53:58+00:00",
+    "pid": 2860,
+    "category": "memory_injection",
+    "title": "Executable private memory region (malfind)",
+    "address": "0x247bf000000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "2"
+      }
+    ]
+  },
+  {
+    "process_id": "2860:0xffff800cfe03a580:2023-05-25T18:53:58+00:00",
+    "pid": 2860,
+    "category": "memory_injection",
+    "title": "Executable private memory region (malfind)",
+    "address": "0x247c55d0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "3"
+      }
+    ]
+  },
+  {
+    "process_id": "2860:0xffff800cfe03a580:2023-05-25T18:53:58+00:00",
+    "pid": 2860,
+    "category": "memory_injection",
+    "title": "Executable private memory region (malfind)",
+    "address": "0x247c6170000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "4"
+      }
+    ]
+  },
+  {
+    "process_id": "2860:0xffff800cfe03a580:2023-05-25T18:53:58+00:00",
+    "pid": 2860,
+    "category": "memory_injection",
+    "title": "Executable private memory region (malfind)",
+    "address": "0x247c5b60000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "5"
+      }
+    ]
+  },
+  {
+    "process_id": "2860:0xffff800cfe03a580:2023-05-25T18:53:58+00:00",
+    "pid": 2860,
+    "category": "memory_injection",
+    "title": "Executable private memory region (malfind)",
+    "address": "0x247c8450000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "6"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "memory_injection",
+    "title": "Executable private memory region (malfind)",
+    "address": "0x1eea4e80000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "7"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "memory_injection",
+    "title": "Executable private memory region (malfind)",
+    "address": "0x1eea62e0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "8"
+      }
+    ]
+  },
+  {
+    "process_id": "1004:0xffff800cffabe580:2023-05-25T18:54:04+00:00",
+    "pid": 1004,
+    "category": "memory_injection",
+    "title": "Executable private memory region (malfind)",
+    "address": "0x19017d40000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "9"
+      }
+    ]
+  },
+  {
+    "process_id": "1004:0xffff800cffabe580:2023-05-25T18:54:04+00:00",
+    "pid": 1004,
+    "category": "memory_injection",
+    "title": "Executable private memory region (malfind)",
+    "address": "0x190184f0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "malfind",
+        "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+        "record_id": "10"
+      }
+    ]
+  },
+  {
+    "process_id": "4:0xffff800cfbed8440:2023-05-25T18:53:54+00:00",
+    "pid": 4,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x77400000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "0"
+      }
+    ]
+  },
+  {
+    "process_id": "4:0xffff800cfbed8440:2023-05-25T18:53:54+00:00",
+    "pid": 4,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff913000000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "1"
+      }
+    ]
+  },
+  {
+    "process_id": "4:0xffff800cfbed8440:2023-05-25T18:53:54+00:00",
+    "pid": 4,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff913030000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "2"
+      }
+    ]
+  },
+  {
+    "process_id": "644:0xffff800cfe514080:2023-05-25T18:53:55+00:00",
+    "pid": 644,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x20620fc0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "110"
+      }
+    ]
+  },
+  {
+    "process_id": "288:0xffff800cfe6c1080:2023-05-25T18:53:56+00:00",
+    "pid": 288,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1a99ac70000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "403"
+      }
+    ]
+  },
+  {
+    "process_id": "1200:0xffff800cfe749580:2023-05-25T18:53:56+00:00",
+    "pid": 1200,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x14befe70000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "699"
+      }
+    ]
+  },
+  {
+    "process_id": "1980:0xffff800cfe92f580:2023-05-25T18:53:57+00:00",
+    "pid": 1980,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x22c4a470000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "1308"
+      }
+    ]
+  },
+  {
+    "process_id": "2860:0xffff800cfe03a580:2023-05-25T18:53:58+00:00",
+    "pid": 2860,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x247b2fa0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "2226"
+      }
+    ]
+  },
+  {
+    "process_id": "3716:0xffff800cfee1f580:2023-05-25T18:53:58+00:00",
+    "pid": 3716,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x262c70f0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "2553"
+      }
+    ]
+  },
+  {
+    "process_id": "3988:0xffff800cfc0ef580:2023-05-25T18:53:58+00:00",
+    "pid": 3988,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x2a430bd0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "2817"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1120000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3115"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1250000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3116"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x2ee0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3117"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x3080000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3118"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x3270000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3119"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x33a0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3120"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x3620000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3121"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x5030000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3122"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x55b0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3123"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x6760000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3124"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x69a0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3125"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x6c50000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3127"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7700000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3128"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7840000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3129"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0xa160000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3130"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0xc0e0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3131"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0xba10000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3132"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x109c0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3133"
+      }
+    ]
+  },
+  {
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1a0e1c80000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3435"
+      }
+    ]
+  },
+  {
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1a0e5360000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3436"
+      }
+    ]
+  },
+  {
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1a0e5000000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3437"
+      }
+    ]
+  },
+  {
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1a0e5250000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3438"
+      }
+    ]
+  },
+  {
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1a0e5110000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3439"
+      }
+    ]
+  },
+  {
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1a0e5850000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3440"
+      }
+    ]
+  },
+  {
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1a0e5710000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3441"
+      }
+    ]
+  },
+  {
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1a0e5600000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3442"
+      }
+    ]
+  },
+  {
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1a0e5960000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3443"
+      }
+    ]
+  },
+  {
+    "process_id": "4792:0xffff800cff346080:2023-05-25T18:54:01+00:00",
+    "pid": 4792,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1a0e6620000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3444"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1e69f930000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3566"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1e6a3000000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3567"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1e6a2a00000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3568"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1e6a2c50000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3569"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1e6a2b10000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3570"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1e6a2d60000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3571"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1e6a3250000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3572"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1e6a3110000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3573"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1eea4550000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3574"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1eea4580000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3575"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1eea45d0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3576"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1eea45f0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3577"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1eea4e10000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3578"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1eea4c20000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3579"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1eea4d70000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3580"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1eea4e00000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3581"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1eea5600000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3582"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1eeb63b0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3583"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1eeb8150000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3584"
+      }
+    ]
+  },
+  {
+    "process_id": "5388:0xffff800cff483080:2023-05-25T18:54:01+00:00",
+    "pid": 5388,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x1eeb81e0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3585"
+      }
+    ]
+  },
+  {
+    "process_id": "5720:0xffff800cfecb9580:2023-05-25T18:54:02+00:00",
+    "pid": 5720,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x278e0c60000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "3800"
+      }
+    ]
+  },
+  {
+    "process_id": "6336:0xffff800cff208080:2023-05-25T18:54:03+00:00",
+    "pid": 6336,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x29e8bdc0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4072"
+      }
+    ]
+  },
+  {
+    "process_id": "6336:0xffff800cff208080:2023-05-25T18:54:03+00:00",
+    "pid": 6336,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x29e8bd20000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4073"
+      }
+    ]
+  },
+  {
+    "process_id": "6336:0xffff800cff208080:2023-05-25T18:54:03+00:00",
+    "pid": 6336,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x29e8c970000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4074"
+      }
+    ]
+  },
+  {
+    "process_id": "6336:0xffff800cff208080:2023-05-25T18:54:03+00:00",
+    "pid": 6336,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x29e8c370000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4075"
+      }
+    ]
+  },
+  {
+    "process_id": "6336:0xffff800cff208080:2023-05-25T18:54:03+00:00",
+    "pid": 6336,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x29e8c5c0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4076"
+      }
+    ]
+  },
+  {
+    "process_id": "6336:0xffff800cff208080:2023-05-25T18:54:03+00:00",
+    "pid": 6336,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x29e8c480000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4077"
+      }
+    ]
+  },
+  {
+    "process_id": "6336:0xffff800cff208080:2023-05-25T18:54:03+00:00",
+    "pid": 6336,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x29e8c6d0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4078"
+      }
+    ]
+  },
+  {
+    "process_id": "6336:0xffff800cff208080:2023-05-25T18:54:03+00:00",
+    "pid": 6336,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x29e8cbc0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4079"
+      }
+    ]
+  },
+  {
+    "process_id": "6336:0xffff800cff208080:2023-05-25T18:54:03+00:00",
+    "pid": 6336,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x29e8ca80000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4080"
+      }
+    ]
+  },
+  {
+    "process_id": "6512:0xffff800cff83c580:2023-05-25T18:54:03+00:00",
+    "pid": 6512,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x228b07a0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4217"
+      }
+    ]
+  },
+  {
+    "process_id": "7128:0xffff800cfe6b9080:2023-05-25T18:54:04+00:00",
+    "pid": 7128,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x19595fb0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4501"
+      }
+    ]
+  },
+  {
+    "process_id": "1004:0xffff800cffabe580:2023-05-25T18:54:04+00:00",
+    "pid": 1004,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x19017d70000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4543"
+      }
+    ]
+  },
+  {
+    "process_id": "8504:0xffff800cff734580:2023-05-25T18:54:14+00:00",
+    "pid": 8504,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x19bdd050000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4827"
+      }
+    ]
+  },
+  {
+    "process_id": "8588:0xffff800cffe7a580:2023-05-25T18:54:15+00:00",
+    "pid": 8588,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x3670000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "4910"
+      }
+    ]
+  },
+  {
+    "process_id": "8944:0xffff800cff3cb580:2023-05-25T18:54:19+00:00",
+    "pid": 8944,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x206e55b0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5068"
+      }
+    ]
+  },
+  {
+    "process_id": "8944:0xffff800cff3cb580:2023-05-25T18:54:19+00:00",
+    "pid": 8944,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x206e5700000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5069"
+      }
+    ]
+  },
+  {
+    "process_id": "8944:0xffff800cff3cb580:2023-05-25T18:54:19+00:00",
+    "pid": 8944,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x206e56f0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5070"
+      }
+    ]
+  },
+  {
+    "process_id": "2964:0xffff800cff684580:2023-05-25T19:01:04+00:00",
+    "pid": 2964,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x213c0210000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5404"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff7c37d0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5486"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff90f340000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5487"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff90e0b0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5488"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff909970000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5489"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff8f8800000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5490"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff8e87c0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5491"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff908560000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5492"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff8fb350000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5493"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff90ae00000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5494"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff909a20000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5495"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff90d880000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5496"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff90c000000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5497"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff90ee40000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5498"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff90e460000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5499"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff90e1c0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5500"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff90edb0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5501"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff90f240000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5502"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff90f140000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5503"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff910150000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5504"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff90fb10000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5505"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff90f370000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5506"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff90f350000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5507"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff90f390000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5508"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff90fec0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5509"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff90fcb0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5510"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff90fe60000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5511"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff90ff60000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5512"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff9107c0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5513"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff910590000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5514"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff910240000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5515"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff910220000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5516"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff9104e0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5517"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff9106e0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5518"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff910630000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5519"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff912ab0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5520"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff912440000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5521"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff911fd0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5522"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff912cd0000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5523"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff912c90000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5524"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff912b90000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5525"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "Module absent from a loader list",
+    "address": "0x7ff913030000",
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "ldrmodules",
+        "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+        "record_id": "5526"
+      }
+    ]
+  },
+  {
+    "process_id": "3988:0xffff800cfc0ef580:2023-05-25T18:53:58+00:00",
+    "pid": 3988,
+    "category": "loader_anomaly",
+    "title": "PEB masquerading indicator",
+    "address": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pebmasquerade",
+        "source_file": "raw/volatility/pebmasquerade-941868f11919/output.jsonl",
+        "record_id": "67"
+      }
+    ]
+  },
+  {
+    "process_id": "8876:0xffff800cfffc5580:2023-05-25T18:54:18+00:00",
+    "pid": 8876,
+    "category": "loader_anomaly",
+    "title": "PEB masquerading indicator",
+    "address": null,
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "pebmasquerade",
+        "source_file": "raw/volatility/pebmasquerade-941868f11919/output.jsonl",
+        "record_id": "100"
+      }
+    ]
+  },
+  {
+    "process_id": "356:0xffff800cff0ab580:2023-05-25T18:57:09+00:00",
+    "pid": 356,
+    "category": "backend_indicator",
+    "title": "FindEvil: PROC_DEBUG",
+    "address": "0x0000000000000000",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:3"
+      }
+    ]
+  },
+  {
+    "process_id": "1908:0xffff800cffd5d080:2023-05-25T18:57:09+00:00",
+    "pid": 1908,
+    "category": "backend_indicator",
+    "title": "FindEvil: PROC_DEBUG",
+    "address": "0x0000000000000000",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:4"
+      }
+    ]
+  },
+  {
+    "process_id": "2952:0xffff800cffdb5580:2023-05-25T19:01:04+00:00",
+    "pid": 2952,
+    "category": "backend_indicator",
+    "title": "FindEvil: PROC_DEBUG",
+    "address": "0x0000000000000000",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:5"
+      }
+    ]
+  },
+  {
+    "process_id": "2964:0xffff800cff684580:2023-05-25T19:01:04+00:00",
+    "pid": 2964,
+    "category": "backend_indicator",
+    "title": "FindEvil: PROC_DEBUG",
+    "address": "0x0000000000000000",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:6"
+      }
+    ]
+  },
+  {
+    "process_id": "4716:0xffff800cff1ed080:2023-05-25T18:54:00+00:00",
+    "pid": 4716,
+    "category": "backend_indicator",
+    "title": "FindEvil: PROC_DEBUG",
+    "address": "0x0000000000000000",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:7"
+      }
+    ]
+  },
+  {
+    "process_id": "7912:0xffff800cff521080:2023-05-25T19:06:57+00:00",
+    "pid": 7912,
+    "category": "backend_indicator",
+    "title": "FindEvil: PROC_DEBUG",
+    "address": "0x0000000000000000",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:8"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "thread_anomaly",
+    "title": "FindEvil: THREAD",
+    "address": "0x00007ff91304f320",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:9"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "thread_anomaly",
+    "title": "FindEvil: THREAD",
+    "address": "0x00007ff91304f320",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:10"
+      }
+    ]
+  },
+  {
+    "process_id": "4520:0xffff800cff12f580:2023-05-25T18:54:00+00:00",
+    "pid": 4520,
+    "category": "thread_anomaly",
+    "title": "FindEvil: THREAD",
+    "address": "0x00007ff91304f320",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:11"
+      }
+    ]
+  },
+  {
+    "process_id": "5720:0xffff800cfecb9580:2023-05-25T18:54:02+00:00",
+    "pid": 5720,
+    "category": "thread_anomaly",
+    "title": "FindEvil: THREAD",
+    "address": "0x00007ff90f561fd0",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:12"
+      }
+    ]
+  },
+  {
+    "process_id": "5836:0xffff800cff4cc580:2023-05-25T18:54:02+00:00",
+    "pid": 5836,
+    "category": "thread_anomaly",
+    "title": "FindEvil: THREAD",
+    "address": "0x00007ff7575462b0",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:13"
+      }
+    ]
+  },
+  {
+    "process_id": "9100:0xffff800cff5cd580:2023-05-25T19:03:18+00:00",
+    "pid": 9100,
+    "category": "loader_anomaly",
+    "title": "FindEvil: PEB_BAD_LDR",
+    "address": "0x0000003fb316f000",
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "findevil",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt",
+        "record_id": "line:14"
+      }
+    ]
+  }
+]

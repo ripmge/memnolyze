@@ -1,0 +1,2207 @@
+[
+  {
+    "process_id": "1888:0xffff800cff717080:2023-05-25T19:02:57+00:00",
+    "pid": 1888,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 0,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "0"
+      }
+    ]
+  },
+  {
+    "process_id": "1888:0xffff800cff717080:2023-05-25T19:02:57+00:00",
+    "pid": 1888,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 0,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "1"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 5353,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "2"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 5353,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "3"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 5355,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "4"
+      }
+    ]
+  },
+  {
+    "process_id": "1888:0xffff800cff717080:2023-05-25T19:02:57+00:00",
+    "pid": 1888,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 0,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "5"
+      }
+    ]
+  },
+  {
+    "process_id": "1888:0xffff800cff717080:2023-05-25T19:02:57+00:00",
+    "pid": 1888,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 0,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "6"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 5355,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "7"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 5355,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "8"
+      }
+    ]
+  },
+  {
+    "process_id": "932:0xffff800cfe4f7580:2023-05-25T18:53:56+00:00",
+    "pid": 932,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 135,
+      "remote_address": "0.0.0.0",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "9"
+      }
+    ]
+  },
+  {
+    "process_id": "932:0xffff800cfe4f7580:2023-05-25T18:53:56+00:00",
+    "pid": 932,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 135,
+      "remote_address": "::",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "10"
+      }
+    ]
+  },
+  {
+    "process_id": "508:0xffff800cfe483080:2023-05-25T18:53:55+00:00",
+    "pid": 508,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 49664,
+      "remote_address": "0.0.0.0",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "11"
+      }
+    ]
+  },
+  {
+    "process_id": "932:0xffff800cfe4f7580:2023-05-25T18:53:56+00:00",
+    "pid": 932,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 135,
+      "remote_address": "0.0.0.0",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "12"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 0,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "13"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 0,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "14"
+      }
+    ]
+  },
+  {
+    "process_id": "508:0xffff800cfe483080:2023-05-25T18:53:55+00:00",
+    "pid": 508,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 49664,
+      "remote_address": "0.0.0.0",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "15"
+      }
+    ]
+  },
+  {
+    "process_id": "508:0xffff800cfe483080:2023-05-25T18:53:55+00:00",
+    "pid": 508,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 49664,
+      "remote_address": "::",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "16"
+      }
+    ]
+  },
+  {
+    "process_id": "1200:0xffff800cfe749580:2023-05-25T18:53:56+00:00",
+    "pid": 1200,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 49665,
+      "remote_address": "0.0.0.0",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "17"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 64736,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "18"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 64736,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "19"
+      }
+    ]
+  },
+  {
+    "process_id": "1200:0xffff800cfe749580:2023-05-25T18:53:56+00:00",
+    "pid": 1200,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 49665,
+      "remote_address": "0.0.0.0",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "20"
+      }
+    ]
+  },
+  {
+    "process_id": "1200:0xffff800cfe749580:2023-05-25T18:53:56+00:00",
+    "pid": 1200,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 49665,
+      "remote_address": "::",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "21"
+      }
+    ]
+  },
+  {
+    "process_id": "1208:0xffff800cfe747580:2023-05-25T18:53:56+00:00",
+    "pid": 1208,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 49666,
+      "remote_address": "0.0.0.0",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "22"
+      }
+    ]
+  },
+  {
+    "process_id": "1208:0xffff800cfe747580:2023-05-25T18:53:56+00:00",
+    "pid": 1208,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 49666,
+      "remote_address": "0.0.0.0",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "23"
+      }
+    ]
+  },
+  {
+    "process_id": "1208:0xffff800cfe747580:2023-05-25T18:53:56+00:00",
+    "pid": 1208,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 49666,
+      "remote_address": "::",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "24"
+      }
+    ]
+  },
+  {
+    "process_id": "1888:0xffff800cff717080:2023-05-25T19:02:57+00:00",
+    "pid": 1888,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 0,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "25"
+      }
+    ]
+  },
+  {
+    "process_id": "1888:0xffff800cff717080:2023-05-25T19:02:57+00:00",
+    "pid": 1888,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 0,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "26"
+      }
+    ]
+  },
+  {
+    "process_id": "4:0xffff800cfbed8440:2023-05-25T18:53:54+00:00",
+    "pid": 4,
+    "attributes": {
+      "local_address": "172.16.134.130",
+      "local_port": 137,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "27"
+      }
+    ]
+  },
+  {
+    "process_id": "4:0xffff800cfbed8440:2023-05-25T18:53:54+00:00",
+    "pid": 4,
+    "attributes": {
+      "local_address": "172.16.134.130",
+      "local_port": 139,
+      "remote_address": "0.0.0.0",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "28"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 5353,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "29"
+      }
+    ]
+  },
+  {
+    "process_id": "3052:0xffff800cfe1a7580:2023-05-25T18:53:58+00:00",
+    "pid": 3052,
+    "attributes": {
+      "local_address": "127.0.0.1",
+      "local_port": 59902,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "30"
+      }
+    ]
+  },
+  {
+    "process_id": "4:0xffff800cfbed8440:2023-05-25T18:53:54+00:00",
+    "pid": 4,
+    "attributes": {
+      "local_address": "172.16.134.130",
+      "local_port": 138,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "31"
+      }
+    ]
+  },
+  {
+    "process_id": "2316:0xffff800cfe2f2580:2023-05-25T18:53:57+00:00",
+    "pid": 2316,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 49667,
+      "remote_address": "0.0.0.0",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "32"
+      }
+    ]
+  },
+  {
+    "process_id": "2316:0xffff800cfe2f2580:2023-05-25T18:53:57+00:00",
+    "pid": 2316,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 49667,
+      "remote_address": "::",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "33"
+      }
+    ]
+  },
+  {
+    "process_id": "2316:0xffff800cfe2f2580:2023-05-25T18:53:57+00:00",
+    "pid": 2316,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 49667,
+      "remote_address": "0.0.0.0",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "34"
+      }
+    ]
+  },
+  {
+    "process_id": "4:0xffff800cfbed8440:2023-05-25T18:53:54+00:00",
+    "pid": 4,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 445,
+      "remote_address": "0.0.0.0",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "35"
+      }
+    ]
+  },
+  {
+    "process_id": "4:0xffff800cfbed8440:2023-05-25T18:53:54+00:00",
+    "pid": 4,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 445,
+      "remote_address": "::",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "36"
+      }
+    ]
+  },
+  {
+    "process_id": "644:0xffff800cfe514080:2023-05-25T18:53:55+00:00",
+    "pid": 644,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 49668,
+      "remote_address": "0.0.0.0",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "37"
+      }
+    ]
+  },
+  {
+    "process_id": "644:0xffff800cfe514080:2023-05-25T18:53:55+00:00",
+    "pid": 644,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 49668,
+      "remote_address": "0.0.0.0",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "38"
+      }
+    ]
+  },
+  {
+    "process_id": "644:0xffff800cfe514080:2023-05-25T18:53:55+00:00",
+    "pid": 644,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 49668,
+      "remote_address": "::",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "39"
+      }
+    ]
+  },
+  {
+    "process_id": "668:0xffff800cfe53e080:2023-05-25T18:53:55+00:00",
+    "pid": 668,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 49669,
+      "remote_address": "0.0.0.0",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "40"
+      }
+    ]
+  },
+  {
+    "process_id": "668:0xffff800cfe53e080:2023-05-25T18:53:55+00:00",
+    "pid": 668,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 49669,
+      "remote_address": "::",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "41"
+      }
+    ]
+  },
+  {
+    "process_id": "356:0xffff800cff0ab580:2023-05-25T18:57:09+00:00",
+    "pid": 356,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 0,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "42"
+      }
+    ]
+  },
+  {
+    "process_id": "9012:0xffff800cfffc2580:2023-05-25T18:54:19+00:00",
+    "pid": 9012,
+    "attributes": {
+      "local_address": "172.16.134.130",
+      "local_port": 1900,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "43"
+      }
+    ]
+  },
+  {
+    "process_id": "9012:0xffff800cfffc2580:2023-05-25T18:54:19+00:00",
+    "pid": 9012,
+    "attributes": {
+      "local_address": "fe80::1837:5ab1:4cdf:23fb",
+      "local_port": 59868,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "44"
+      }
+    ]
+  },
+  {
+    "process_id": "9012:0xffff800cfffc2580:2023-05-25T18:54:19+00:00",
+    "pid": 9012,
+    "attributes": {
+      "local_address": "::1",
+      "local_port": 1900,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "45"
+      }
+    ]
+  },
+  {
+    "process_id": "356:0xffff800cff0ab580:2023-05-25T18:57:09+00:00",
+    "pid": 356,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 0,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "46"
+      }
+    ]
+  },
+  {
+    "process_id": "356:0xffff800cff0ab580:2023-05-25T18:57:09+00:00",
+    "pid": 356,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 0,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "47"
+      }
+    ]
+  },
+  {
+    "process_id": "9012:0xffff800cfffc2580:2023-05-25T18:54:19+00:00",
+    "pid": 9012,
+    "attributes": {
+      "local_address": "127.0.0.1",
+      "local_port": 1900,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "48"
+      }
+    ]
+  },
+  {
+    "process_id": "2332:0xffff800cfe28e580:2023-05-25T18:53:57+00:00",
+    "pid": 2332,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 0,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "49"
+      }
+    ]
+  },
+  {
+    "process_id": "2332:0xffff800cfe28e580:2023-05-25T18:53:57+00:00",
+    "pid": 2332,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 0,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "50"
+      }
+    ]
+  },
+  {
+    "process_id": "668:0xffff800cfe53e080:2023-05-25T18:53:55+00:00",
+    "pid": 668,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 49669,
+      "remote_address": "0.0.0.0",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "51"
+      }
+    ]
+  },
+  {
+    "process_id": "8148:0xffff800cffc42580:2023-05-25T18:54:08+00:00",
+    "pid": 8148,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 5040,
+      "remote_address": "0.0.0.0",
+      "remote_port": 0,
+      "state": "LISTENING",
+      "protocol": "TCPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "52"
+      }
+    ]
+  },
+  {
+    "process_id": "8148:0xffff800cffc42580:2023-05-25T18:54:08+00:00",
+    "pid": 8148,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 5050,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "53"
+      }
+    ]
+  },
+  {
+    "process_id": "9012:0xffff800cfffc2580:2023-05-25T18:54:19+00:00",
+    "pid": 9012,
+    "attributes": {
+      "local_address": "::1",
+      "local_port": 59869,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "54"
+      }
+    ]
+  },
+  {
+    "process_id": "9012:0xffff800cfffc2580:2023-05-25T18:54:19+00:00",
+    "pid": 9012,
+    "attributes": {
+      "local_address": "172.16.134.130",
+      "local_port": 59870,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "55"
+      }
+    ]
+  },
+  {
+    "process_id": "9012:0xffff800cfffc2580:2023-05-25T18:54:19+00:00",
+    "pid": 9012,
+    "attributes": {
+      "local_address": "fe80::1837:5ab1:4cdf:23fb",
+      "local_port": 1900,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "56"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 56961,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "57"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 56961,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "58"
+      }
+    ]
+  },
+  {
+    "process_id": "8944:0xffff800cff3cb580:2023-05-25T18:54:19+00:00",
+    "pid": 8944,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 0,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "59"
+      }
+    ]
+  },
+  {
+    "process_id": "8944:0xffff800cff3cb580:2023-05-25T18:54:19+00:00",
+    "pid": 8944,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 0,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv6",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "60"
+      }
+    ]
+  },
+  {
+    "process_id": "9012:0xffff800cfffc2580:2023-05-25T18:54:19+00:00",
+    "pid": 9012,
+    "attributes": {
+      "local_address": "127.0.0.1",
+      "local_port": 59871,
+      "remote_address": "*",
+      "remote_port": 0,
+      "state": "",
+      "protocol": "UDPv4",
+      "ip_version": null
+    },
+    "evidence": [
+      {
+        "backend": "volatility",
+        "plugin": "netscan",
+        "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+        "record_id": "61"
+      }
+    ]
+  },
+  {
+    "process_id": "4:0xffff800cfbed8440:2023-05-25T18:53:54+00:00",
+    "pid": 4,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 445,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 1,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "0"
+      }
+    ]
+  },
+  {
+    "process_id": "4:0xffff800cfbed8440:2023-05-25T18:53:54+00:00",
+    "pid": 4,
+    "attributes": {
+      "local_address": "172.16.134.130",
+      "local_port": 139,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 1,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "1"
+      }
+    ]
+  },
+  {
+    "process_id": "508:0xffff800cfe483080:2023-05-25T18:53:55+00:00",
+    "pid": 508,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 49664,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 1,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "2"
+      }
+    ]
+  },
+  {
+    "process_id": "508:0xffff800cfe483080:2023-05-25T18:53:55+00:00",
+    "pid": 508,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 49664,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 1,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "3"
+      }
+    ]
+  },
+  {
+    "process_id": "644:0xffff800cfe514080:2023-05-25T18:53:55+00:00",
+    "pid": 644,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 49668,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 1,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "4"
+      }
+    ]
+  },
+  {
+    "process_id": "644:0xffff800cfe514080:2023-05-25T18:53:55+00:00",
+    "pid": 644,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 49668,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 1,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "5"
+      }
+    ]
+  },
+  {
+    "process_id": "668:0xffff800cfe53e080:2023-05-25T18:53:55+00:00",
+    "pid": 668,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 49669,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 1,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "6"
+      }
+    ]
+  },
+  {
+    "process_id": "668:0xffff800cfe53e080:2023-05-25T18:53:55+00:00",
+    "pid": 668,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 49669,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 1,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "7"
+      }
+    ]
+  },
+  {
+    "process_id": "932:0xffff800cfe4f7580:2023-05-25T18:53:56+00:00",
+    "pid": 932,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 135,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 1,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "8"
+      }
+    ]
+  },
+  {
+    "process_id": "932:0xffff800cfe4f7580:2023-05-25T18:53:56+00:00",
+    "pid": 932,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 135,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 1,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "9"
+      }
+    ]
+  },
+  {
+    "process_id": "1200:0xffff800cfe749580:2023-05-25T18:53:56+00:00",
+    "pid": 1200,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 49665,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 1,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "10"
+      }
+    ]
+  },
+  {
+    "process_id": "1200:0xffff800cfe749580:2023-05-25T18:53:56+00:00",
+    "pid": 1200,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 49665,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 1,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "11"
+      }
+    ]
+  },
+  {
+    "process_id": "1208:0xffff800cfe747580:2023-05-25T18:53:56+00:00",
+    "pid": 1208,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 49666,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 1,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "12"
+      }
+    ]
+  },
+  {
+    "process_id": "1208:0xffff800cfe747580:2023-05-25T18:53:56+00:00",
+    "pid": 1208,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 49666,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 1,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "13"
+      }
+    ]
+  },
+  {
+    "process_id": "2316:0xffff800cfe2f2580:2023-05-25T18:53:57+00:00",
+    "pid": 2316,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 49667,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 1,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "14"
+      }
+    ]
+  },
+  {
+    "process_id": "2316:0xffff800cfe2f2580:2023-05-25T18:53:57+00:00",
+    "pid": 2316,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 49667,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 1,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "15"
+      }
+    ]
+  },
+  {
+    "process_id": "8148:0xffff800cffc42580:2023-05-25T18:54:08+00:00",
+    "pid": 8148,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 5040,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 1,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "16"
+      }
+    ]
+  },
+  {
+    "process_id": "4:0xffff800cfbed8440:2023-05-25T18:53:54+00:00",
+    "pid": 4,
+    "attributes": {
+      "local_address": "172.16.134.130",
+      "local_port": 137,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "17"
+      }
+    ]
+  },
+  {
+    "process_id": "4:0xffff800cfbed8440:2023-05-25T18:53:54+00:00",
+    "pid": 4,
+    "attributes": {
+      "local_address": "172.16.134.130",
+      "local_port": 138,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "18"
+      }
+    ]
+  },
+  {
+    "process_id": "356:0xffff800cff0ab580:2023-05-25T18:57:09+00:00",
+    "pid": 356,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 0,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "19"
+      }
+    ]
+  },
+  {
+    "process_id": "356:0xffff800cff0ab580:2023-05-25T18:57:09+00:00",
+    "pid": 356,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 0,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "20"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 0,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "21"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 5353,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "22"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 5353,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "23"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 5355,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "24"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 5355,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "25"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 56961,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "26"
+      }
+    ]
+  },
+  {
+    "process_id": "1820:0xffff800cfe93e400:2023-05-25T18:53:56+00:00",
+    "pid": 1820,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 64736,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "27"
+      }
+    ]
+  },
+  {
+    "process_id": "1888:0xffff800cff717080:2023-05-25T19:02:57+00:00",
+    "pid": 1888,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 0,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "28"
+      }
+    ]
+  },
+  {
+    "process_id": "1888:0xffff800cff717080:2023-05-25T19:02:57+00:00",
+    "pid": 1888,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 0,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "29"
+      }
+    ]
+  },
+  {
+    "process_id": "1888:0xffff800cff717080:2023-05-25T19:02:57+00:00",
+    "pid": 1888,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 0,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "30"
+      }
+    ]
+  },
+  {
+    "process_id": "2332:0xffff800cfe28e580:2023-05-25T18:53:57+00:00",
+    "pid": 2332,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 0,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "31"
+      }
+    ]
+  },
+  {
+    "process_id": "3052:0xffff800cfe1a7580:2023-05-25T18:53:58+00:00",
+    "pid": 3052,
+    "attributes": {
+      "local_address": "127.0.0.1",
+      "local_port": 59902,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "32"
+      }
+    ]
+  },
+  {
+    "process_id": "8148:0xffff800cffc42580:2023-05-25T18:54:08+00:00",
+    "pid": 8148,
+    "attributes": {
+      "local_address": "0.0.0.0",
+      "local_port": 5050,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "33"
+      }
+    ]
+  },
+  {
+    "process_id": "8944:0xffff800cff3cb580:2023-05-25T18:54:19+00:00",
+    "pid": 8944,
+    "attributes": {
+      "local_address": "::",
+      "local_port": 0,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "34"
+      }
+    ]
+  },
+  {
+    "process_id": "9012:0xffff800cfffc2580:2023-05-25T18:54:19+00:00",
+    "pid": 9012,
+    "attributes": {
+      "local_address": "::1",
+      "local_port": 1900,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "35"
+      }
+    ]
+  },
+  {
+    "process_id": "9012:0xffff800cfffc2580:2023-05-25T18:54:19+00:00",
+    "pid": 9012,
+    "attributes": {
+      "local_address": "::1",
+      "local_port": 59869,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "36"
+      }
+    ]
+  },
+  {
+    "process_id": "9012:0xffff800cfffc2580:2023-05-25T18:54:19+00:00",
+    "pid": 9012,
+    "attributes": {
+      "local_address": "127.0.0.1",
+      "local_port": 1900,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "37"
+      }
+    ]
+  },
+  {
+    "process_id": "9012:0xffff800cfffc2580:2023-05-25T18:54:19+00:00",
+    "pid": 9012,
+    "attributes": {
+      "local_address": "127.0.0.1",
+      "local_port": 59871,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "38"
+      }
+    ]
+  },
+  {
+    "process_id": "9012:0xffff800cfffc2580:2023-05-25T18:54:19+00:00",
+    "pid": 9012,
+    "attributes": {
+      "local_address": "172.16.134.130",
+      "local_port": 1900,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "39"
+      }
+    ]
+  },
+  {
+    "process_id": "9012:0xffff800cfffc2580:2023-05-25T18:54:19+00:00",
+    "pid": 9012,
+    "attributes": {
+      "local_address": "172.16.134.130",
+      "local_port": 59870,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 4
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "40"
+      }
+    ]
+  },
+  {
+    "process_id": "9012:0xffff800cfffc2580:2023-05-25T18:54:19+00:00",
+    "pid": 9012,
+    "attributes": {
+      "local_address": "fe80::1837:5ab1:4cdf:23fb",
+      "local_port": 1900,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "41"
+      }
+    ]
+  },
+  {
+    "process_id": "9012:0xffff800cfffc2580:2023-05-25T18:54:19+00:00",
+    "pid": 9012,
+    "attributes": {
+      "local_address": "fe80::1837:5ab1:4cdf:23fb",
+      "local_port": 59868,
+      "remote_address": "***",
+      "remote_port": 0,
+      "state": 13,
+      "protocol": null,
+      "ip_version": 6
+    },
+    "evidence": [
+      {
+        "backend": "memprocfs",
+        "plugin": "networks",
+        "source_file": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+        "record_id": "42"
+      }
+    ]
+  }
+]

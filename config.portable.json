@@ -1,0 +1,13 @@
+{
+  "volatility_command": null,
+  "memprocfs_path": null,
+  "state_dir": ".state",
+  "timeout_seconds": 1800,
+  "forensic_timeout_seconds": 1800,
+  "symbol_dirs": [],
+  "plugins": null,
+  "plugin_args": {},
+  "memprocfs_forensic": true,
+  "memprocfs_symbols": false,
+  "max_vfs_bytes": 67108864
+}

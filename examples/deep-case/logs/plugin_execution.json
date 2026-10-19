@@ -1,0 +1,611 @@
+[
+  {
+    "backend": "volatility",
+    "plugin": "info",
+    "profile": "deep",
+    "status": "success",
+    "started_at": "2026-10-18T15:39:53.980944+00:00",
+    "source_file": "raw/volatility/info-3b0afbc8483c/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.info.Info"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 1.703,
+    "stderr_file": "raw/volatility/info-3b0afbc8483c/stderr.txt",
+    "record_count": 21,
+    "artifact_hashes": {
+      "raw/volatility/info-3b0afbc8483c/output.jsonl": "0a28ad7a170212e229f80906f484b85546691a5cdd72f0eb9c5aedeac4294ed1"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "pslist",
+    "profile": "deep",
+    "status": "success",
+    "started_at": "2026-10-18T15:39:55.710797+00:00",
+    "source_file": "raw/volatility/pslist-69e554a4ef92/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.pslist.PsList"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 1.75,
+    "stderr_file": "raw/volatility/pslist-69e554a4ef92/stderr.txt",
+    "record_count": 120,
+    "artifact_hashes": {
+      "raw/volatility/pslist-69e554a4ef92/output.jsonl": "fe51f62ca3985947e80c04a32d22155dd56e615bd073b4260bccbc56e9096835"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "psscan",
+    "profile": "deep",
+    "status": "success",
+    "started_at": "2026-10-18T15:39:57.490145+00:00",
+    "source_file": "raw/volatility/psscan-b80230308bce/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.psscan.PsScan"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 11.14,
+    "stderr_file": "raw/volatility/psscan-b80230308bce/stderr.txt",
+    "record_count": 134,
+    "artifact_hashes": {
+      "raw/volatility/psscan-b80230308bce/output.jsonl": "c30b1f9a884bf220b2a2da7f6e2885ee845871850f82ca0ae1535ba1faaebb54"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "pstree",
+    "profile": "deep",
+    "status": "success",
+    "started_at": "2026-10-18T15:40:08.646185+00:00",
+    "source_file": "raw/volatility/pstree-fe1917b3ba46/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.pstree.PsTree"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 1.562,
+    "stderr_file": "raw/volatility/pstree-fe1917b3ba46/stderr.txt",
+    "record_count": 120,
+    "artifact_hashes": {
+      "raw/volatility/pstree-fe1917b3ba46/output.jsonl": "36937edb6006272f5f099628debf5829b9d80c8298d727cc988f4e3b0b559f52"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "cmdline",
+    "profile": "deep",
+    "status": "success",
+    "started_at": "2026-10-18T15:40:10.229439+00:00",
+    "source_file": "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.cmdline.CmdLine"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 1.422,
+    "stderr_file": "raw/volatility/cmdline-d9f6dc7f32a9/stderr.txt",
+    "record_count": 120,
+    "artifact_hashes": {
+      "raw/volatility/cmdline-d9f6dc7f32a9/output.jsonl": "161eefbd31e3a11fd3b1409c16fdb8b561bfea61719e6db2f3e5b0c10aa14dae"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "netscan",
+    "profile": "deep",
+    "status": "success",
+    "started_at": "2026-10-18T15:40:11.678197+00:00",
+    "source_file": "raw/volatility/netscan-a04b5611d541/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.netscan.NetScan"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 7.547,
+    "stderr_file": "raw/volatility/netscan-a04b5611d541/stderr.txt",
+    "record_count": 62,
+    "artifact_hashes": {
+      "raw/volatility/netscan-a04b5611d541/output.jsonl": "1395524a18f1aa93fbf069333d3a50d20563e32a6f8838cc20f76d824e01d7d7"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "svcscan",
+    "profile": "deep",
+    "status": "success",
+    "started_at": "2026-10-18T15:40:19.260339+00:00",
+    "source_file": "raw/volatility/svcscan-d77e7a622612/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.svcscan.SvcScan"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 16.75,
+    "stderr_file": "raw/volatility/svcscan-d77e7a622612/stderr.txt",
+    "record_count": 1330,
+    "artifact_hashes": {
+      "raw/volatility/svcscan-d77e7a622612/output.jsonl": "5840956fadf0af41389e53c8d885104e369ee68f1944d7c74e0975e627c2c96e"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "malfind",
+    "profile": "deep",
+    "status": "success",
+    "started_at": "2026-10-18T15:40:36.042825+00:00",
+    "source_file": "raw/volatility/malfind-23678d5444ba/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.malware.malfind.Malfind"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 66.781,
+    "stderr_file": "raw/volatility/malfind-23678d5444ba/stderr.txt",
+    "record_count": 11,
+    "artifact_hashes": {
+      "raw/volatility/malfind-23678d5444ba/output.jsonl": "82cac7fcc65c16131ffce20eb3f542eb338a45e7069b12db1b2383acd5b1385a"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "dlllist",
+    "profile": "deep",
+    "status": "success",
+    "started_at": "2026-10-18T15:41:42.839958+00:00",
+    "source_file": "raw/volatility/dlllist-72ea4a4a51c9/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.dlllist.DllList"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 9.594,
+    "stderr_file": "raw/volatility/dlllist-72ea4a4a51c9/stderr.txt",
+    "record_count": 5717,
+    "artifact_hashes": {
+      "raw/volatility/dlllist-72ea4a4a51c9/output.jsonl": "82001c0fdacf5cc206e19d5bb28edbcb81d4a6e0f9deb9928cf799c3c420b1e4"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "ldrmodules",
+    "profile": "deep",
+    "status": "success",
+    "started_at": "2026-10-18T15:41:52.490729+00:00",
+    "source_file": "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.malware.ldrmodules.LdrModules"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 21.86,
+    "stderr_file": "raw/volatility/ldrmodules-2083f4e71fee/stderr.txt",
+    "record_count": 5663,
+    "artifact_hashes": {
+      "raw/volatility/ldrmodules-2083f4e71fee/output.jsonl": "bf9a89f9f9e8046d88243eb63258fe4b683f7b71a1a11c617e6bf9d6550cd7f7"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "suspicious_threads",
+    "profile": "deep",
+    "status": "empty",
+    "started_at": "2026-10-18T15:42:14.406830+00:00",
+    "source_file": "raw/volatility/suspicious_threads-fa96f3eafdcd/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.malware.suspicious_threads.SuspiciousThreads"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 77.437,
+    "stderr_file": "raw/volatility/suspicious_threads-fa96f3eafdcd/stderr.txt",
+    "record_count": 0,
+    "artifact_hashes": {
+      "raw/volatility/suspicious_threads-fa96f3eafdcd/output.jsonl": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "hollowprocesses",
+    "profile": "deep",
+    "status": "empty",
+    "started_at": "2026-10-18T15:43:31.854597+00:00",
+    "source_file": "raw/volatility/hollowprocesses-b54c4dc6bbd6/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.malware.hollowprocesses.HollowProcesses"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 80.312,
+    "stderr_file": "raw/volatility/hollowprocesses-b54c4dc6bbd6/stderr.txt",
+    "record_count": 0,
+    "artifact_hashes": {
+      "raw/volatility/hollowprocesses-b54c4dc6bbd6/output.jsonl": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "processghosting",
+    "profile": "deep",
+    "status": "empty",
+    "started_at": "2026-10-18T15:44:52.173862+00:00",
+    "source_file": "raw/volatility/processghosting-a427c3a74779/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.malware.processghosting.ProcessGhosting"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 21.188,
+    "stderr_file": "raw/volatility/processghosting-a427c3a74779/stderr.txt",
+    "record_count": 0,
+    "artifact_hashes": {
+      "raw/volatility/processghosting-a427c3a74779/output.jsonl": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "pebmasquerade",
+    "profile": "deep",
+    "status": "success",
+    "started_at": "2026-10-18T15:45:13.365788+00:00",
+    "source_file": "raw/volatility/pebmasquerade-941868f11919/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.malware.pebmasquerade.PebMasquerade"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 1.672,
+    "stderr_file": "raw/volatility/pebmasquerade-941868f11919/stderr.txt",
+    "record_count": 120,
+    "artifact_hashes": {
+      "raw/volatility/pebmasquerade-941868f11919/output.jsonl": "0f9759381639285b5c91673a524d3a487ea7fbf6af8d36821846b01416821916"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "callbacks",
+    "profile": "deep",
+    "status": "success",
+    "started_at": "2026-10-18T15:45:15.075036+00:00",
+    "source_file": "raw/volatility/callbacks-7c5d8bc76741/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.callbacks.Callbacks"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 7.36,
+    "stderr_file": "raw/volatility/callbacks-7c5d8bc76741/stderr.txt",
+    "record_count": 235,
+    "artifact_hashes": {
+      "raw/volatility/callbacks-7c5d8bc76741/output.jsonl": "4499978b55ffa5cd17c55334075a5f181c699879d99486f56c1a852f3ced762a"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "modules",
+    "profile": "deep",
+    "status": "success",
+    "started_at": "2026-10-18T15:45:22.451926+00:00",
+    "source_file": "raw/volatility/modules-8c778417450f/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.modules.Modules"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 1.235,
+    "stderr_file": "raw/volatility/modules-8c778417450f/stderr.txt",
+    "record_count": 171,
+    "artifact_hashes": {
+      "raw/volatility/modules-8c778417450f/output.jsonl": "8243cb4c88680f82c023496ba0ae4e494a6ff2d4c494a496237ad497b3e00678"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "driverirp",
+    "profile": "deep",
+    "status": "success",
+    "started_at": "2026-10-18T15:45:23.716010+00:00",
+    "source_file": "raw/volatility/driverirp-f5b40f9ad8b7/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.driverirp.DriverIrp"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 8.391,
+    "stderr_file": "raw/volatility/driverirp-f5b40f9ad8b7/stderr.txt",
+    "record_count": 3922,
+    "artifact_hashes": {
+      "raw/volatility/driverirp-f5b40f9ad8b7/output.jsonl": "8be2e53ff5d9a7099b8b8db500474c0ce3caa95c666940d38917fb43c255ca2b"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "vadinfo",
+    "profile": "deep",
+    "status": "success",
+    "started_at": "2026-10-18T15:45:32.143896+00:00",
+    "source_file": "raw/volatility/vadinfo-380022a6fa44/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.vadinfo.VadInfo"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 89.187,
+    "stderr_file": "raw/volatility/vadinfo-380022a6fa44/stderr.txt",
+    "record_count": 13016,
+    "artifact_hashes": {
+      "raw/volatility/vadinfo-380022a6fa44/output.jsonl": "67019e85bc4c2f0bf43d9074f2433b5b06f19185af04fffe85f2eeb64d6340e2"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "handles",
+    "profile": "deep",
+    "status": "success",
+    "started_at": "2026-10-18T15:47:01.478326+00:00",
+    "source_file": "raw/volatility/handles-df7b2fd3010c/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.handles.Handles"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 44.062,
+    "stderr_file": "raw/volatility/handles-df7b2fd3010c/stderr.txt",
+    "record_count": 39449,
+    "artifact_hashes": {
+      "raw/volatility/handles-df7b2fd3010c/output.jsonl": "3045c57b3f87251c8c3c858d5a842a60164aeb3bc3cb948f2623658a99deafe4"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "threads",
+    "profile": "deep",
+    "status": "success",
+    "started_at": "2026-10-18T15:47:45.694073+00:00",
+    "source_file": "raw/volatility/threads-5a3f576ca537/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.threads.Threads"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 17.829,
+    "stderr_file": "raw/volatility/threads-5a3f576ca537/stderr.txt",
+    "record_count": 1479,
+    "artifact_hashes": {
+      "raw/volatility/threads-5a3f576ca537/output.jsonl": "552d54c4e1493723013786b07a353d4c5bcbbcdbb78e662468bee0d01eab5504"
+    }
+  },
+  {
+    "backend": "volatility",
+    "plugin": "privileges",
+    "profile": "deep",
+    "status": "success",
+    "started_at": "2026-10-18T15:48:03.557332+00:00",
+    "source_file": "raw/volatility/privileges-8ee1f8b03ab6/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\vol.EXE",
+      "-q",
+      "-r",
+      "jsonl",
+      "--cache-path",
+      "C:\\Users\\Administrator\\Documents\\project\\.state\\volatility3",
+      "--offline",
+      "-f",
+      "C:\\Users\\Administrator\\Documents\\project\\ransomcare-case1.dmp\\ransomcare5.dmp",
+      "windows.privileges.Privs"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 1.484,
+    "stderr_file": "raw/volatility/privileges-8ee1f8b03ab6/stderr.txt",
+    "record_count": 4200,
+    "artifact_hashes": {
+      "raw/volatility/privileges-8ee1f8b03ab6/output.jsonl": "85bc69de41d1f1ee876f4f092c302fe4c0effd84c294b9a68d7ca3fc11641b43"
+    }
+  },
+  {
+    "backend": "memprocfs",
+    "plugin": "triage",
+    "profile": "deep",
+    "status": "partial",
+    "started_at": "2026-10-18T15:48:05.087050+00:00",
+    "source_file": "raw/memprocfs/triage-7fd1d7c953c1/output.jsonl",
+    "command": [
+      "C:\\Users\\Administrator\\Documents\\project\\.venv\\Scripts\\python.exe",
+      "-m",
+      "memtriage.backends.memprocfs",
+      "C:\\Users\\Administrator\\Documents\\project\\cases\\ransomcase-deep\\raw\\memprocfs\\triage-7fd1d7c953c1\\job.json"
+    ],
+    "exit_code": 0,
+    "duration_seconds": 25.422,
+    "stderr_file": "raw/memprocfs/triage-7fd1d7c953c1/stderr.txt",
+    "artifacts": {
+      "errors": "raw/memprocfs/triage-7fd1d7c953c1/errors.json",
+      "findevil_listing": "raw/memprocfs/triage-7fd1d7c953c1/findevil_listing.json",
+      "forensic": "raw/memprocfs/triage-7fd1d7c953c1/forensic.json",
+      "info": "raw/memprocfs/triage-7fd1d7c953c1/info.json",
+      "modules": "raw/memprocfs/triage-7fd1d7c953c1/modules.json",
+      "networks": "raw/memprocfs/triage-7fd1d7c953c1/networks.json",
+      "processes": "raw/memprocfs/triage-7fd1d7c953c1/processes.json",
+      "regions": "raw/memprocfs/triage-7fd1d7c953c1/regions.json",
+      "threads": "raw/memprocfs/triage-7fd1d7c953c1/threads.json",
+      "findevil": "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt"
+    },
+    "extraction_errors": 7,
+    "artifact_hashes": {
+      "raw/memprocfs/triage-7fd1d7c953c1/errors.json": "a5a0a1864ba57469e5155c029d601e3343793a7a2ccb7c26c6e3d414fa94770c",
+      "raw/memprocfs/triage-7fd1d7c953c1/findevil_listing.json": "ccbf0fed39c874220d1f54045e1f1a8d3553ef78e81bc13e4297523edf23b7c6",
+      "raw/memprocfs/triage-7fd1d7c953c1/forensic.json": "8435e28685230c6438620af25546190f025c49382aeb7d866e0aef59adde831b",
+      "raw/memprocfs/triage-7fd1d7c953c1/info.json": "16a14176e7f402bc5d06748af809b8cb7df9102817a8c470072c6c11dae8b246",
+      "raw/memprocfs/triage-7fd1d7c953c1/modules.json": "574045f716ef0743ff0b4e7f0494aa2e36f49434fe2d46a1c6f457c2c23b49db",
+      "raw/memprocfs/triage-7fd1d7c953c1/networks.json": "fdcc03da5ab704a9455761333cf1cf47e1ada3b0064cd956bd9af561e182feb3",
+      "raw/memprocfs/triage-7fd1d7c953c1/processes.json": "3c71f8db9737264afbafae0b893fd7ce2738cd4f4d519caa6e7321fe69ea4237",
+      "raw/memprocfs/triage-7fd1d7c953c1/regions.json": "7ac225f63b12d69352429ddae143f3dca4d4eeeb764708537342c48582f750ff",
+      "raw/memprocfs/triage-7fd1d7c953c1/threads.json": "b381cc5770afd13ff770b1786c4e746e5ea8c7bbaeab806402424095f8cba02f",
+      "raw/memprocfs/triage-7fd1d7c953c1/findevil.txt": "78050fe7904a1db2547b51c76fdfe6abea006c8393343350f1904024cdc933eb"
+    }
+  }
+]
