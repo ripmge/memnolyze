@@ -9,13 +9,14 @@ from pathlib import Path
 from .backends import volatility, memprocfs
 from .config import PROFILES
 from .detectors import detect
-from .io import fingerprint, write_json, read_json, execute, child_env, rows, utcnow
+from .io import fingerprint, write_json, read_json, execute, child_env, rows, utcnow, text_tail
+from .diagnostics import failure_hint, log_execution
 from .normalizers import normalize
 from .reporting import render
 
 def analyze(image: Path, case: Path, config: dict, profile: str, backend: str,
             offline: bool, resume: bool, pid: int | None, only: list[str] | None,
-            rerun: list[str] | None = None) -> int:
+            rerun: list[str] | None = None, skip_hash: bool = False) -> int:
     image, case = image.resolve(strict=True), case.resolve()
     if not image.is_file():
         raise ValueError('Image path must point to a regular file')
@@ -27,10 +28,22 @@ def analyze(image: Path, case: Path, config: dict, profile: str, backend: str,
     previous = read_json(manifest_path) if resume and manifest_path.exists() else None
     if previous and (previous['pid'] != pid or previous['offline'] != offline or previous['config'] != config):
         raise ValueError('Resume requires the same configuration, offline policy and PID scope')
-    logging.info('Hashing input image (streaming SHA-256)')
-    metadata = fingerprint(image)
-    if previous and previous['image']['sha256'] != metadata['sha256']:
-        raise ValueError('Resume refused: input hash differs from existing case')
+    logging.info('Skipping image SHA-256; checking file metadata only' if skip_hash else
+                 'Hashing input image (streaming SHA-256)')
+    metadata = fingerprint(image, skip_hash=skip_hash)
+    verification = {'checked_at': utcnow(), 'sha256_skipped': skip_hash,
+                    'resume_identity': 'not_applicable'}
+    if previous:
+        original = previous['image']
+        if not skip_hash and original.get('sha256'):
+            if original['sha256'] != metadata['sha256']:
+                raise ValueError('Resume refused: input hash differs from existing case')
+            verification['resume_identity'] = 'sha256'
+        else:
+            if any(original.get(key) != metadata[key] for key in ('path', 'size', 'mtime_ns')):
+                raise ValueError('Resume refused: input path, size or modification time differs from existing case')
+            verification['resume_identity'] = 'metadata_only'
+    # Preserve the original fingerprint: a later hash cannot verify earlier unhashed input.
     for directory in ('logs', 'raw', 'normalized', 'exports'):
         (case / directory).mkdir(parents=True, exist_ok=True)
     handler = logging.FileHandler(case / 'logs/analyzer.log', encoding='utf-8')
@@ -49,6 +62,9 @@ def analyze(image: Path, case: Path, config: dict, profile: str, backend: str,
                             'pid': pid, 'offline': offline, 'config': config, 'executions': [],
                             'backend_info': {}, 'capabilities': {}}
     manifest.update(status='running', updated_at=utcnow(), profile=profile)
+    manifest['image_verification'] = verification
+    manifest.setdefault('image_verification_history', []).append({**verification,
+        'observed_sha256': metadata['sha256']})
     write_json(case / 'config.json', config)
     write_json(manifest_path, manifest)
     def checkpoint() -> None:
@@ -84,6 +100,7 @@ def analyze(image: Path, case: Path, config: dict, profile: str, backend: str,
                 manifest['executions'].append({'backend': engine, 'plugin': 'discovery',
                     'status': 'unavailable', 'error': capability.get('error', 'Backend not installed')})
                 checkpoint()
+                log_execution(manifest['executions'][-1], case)
                 continue
             plugins = (only or config['plugins'] or PROFILES[profile]) if engine == 'volatility' else ['triage']
             # Always establish OS metadata, including in targeted reruns.
@@ -99,7 +116,8 @@ def analyze(image: Path, case: Path, config: dict, profile: str, backend: str,
                 target = case / 'raw' / engine / f'{plugin}-{token}'
                 target.mkdir(parents=True)
                 record = {'backend': engine, 'plugin': plugin, 'profile': profile, 'status': 'running', 'started_at': utcnow(),
-                          'source_file': (target / 'output.jsonl').relative_to(case).as_posix()}
+                          'source_file': (target / 'output.jsonl').relative_to(case).as_posix(),
+                          'stderr_file': (target / 'stderr.txt').relative_to(case).as_posix()}
                 manifest['executions'].append(record)
                 checkpoint()
                 logging.info('Running %s/%s', engine, plugin)
@@ -109,6 +127,7 @@ def analyze(image: Path, case: Path, config: dict, profile: str, backend: str,
                         if cmd is None:
                             record.update(status='unsupported', error='Plugin not advertised by installed backend')
                             checkpoint()
+                            log_execution(record, case)
                             continue
                     else:
                         job = target / 'job.json'
@@ -120,6 +139,9 @@ def analyze(image: Path, case: Path, config: dict, profile: str, backend: str,
                                      child_env(Path(config['state_dir'])))
                     record.update(result)
                     record['stderr_file'] = (target / 'stderr.txt').relative_to(case).as_posix()
+                    if record['status'] not in ('success', 'interrupted') and not record.get('error'):
+                        record['error'] = failure_hint(engine, text_tail(target / 'stderr.txt') +
+                                                      '\n' + text_tail(target / 'output.jsonl'), offline)
                     if engine == 'volatility' and record['status'] == 'success':
                         count, info = 0, []
                         for row in rows(target / 'output.jsonl'):
@@ -149,8 +171,14 @@ def analyze(image: Path, case: Path, config: dict, profile: str, backend: str,
                             if 'errors' in artifacts:
                                 errors = read_json(case / artifacts['errors'])
                                 record['extraction_errors'] = len(errors)
+                                from collections import Counter
+                                operations = Counter(e.get('operation', 'unknown') for e in errors)
+                                record['extraction_error_summary'] = ', '.join(
+                                    f'{operation}: {count}' for operation, count in sorted(operations.items()))
                                 if any(e.get('operation') in ('modules', 'networks', 'vad', 'thread') for e in errors):
                                     record['status'] = 'partial'
+                                    if not record.get('error'):
+                                        record['error'] = 'Some metadata could not be extracted; see the original errors.json artifact.'
                         elif record['status'] == 'success':
                             raise ValueError('MemProcFS returned without OS metadata')
                     sources = list(record.get('artifacts', {}).values()) if engine == 'memprocfs' else [record['source_file']]
@@ -158,6 +186,7 @@ def analyze(image: Path, case: Path, config: dict, profile: str, backend: str,
                 except (ValueError, OSError, RuntimeError, subprocess.SubprocessError) as exc:
                     record.update(status='failed', error=str(exc))
                 checkpoint()
+                log_execution(record, case)
                 if record['status'] == 'interrupted':
                     raise KeyboardInterrupt
         current = {}
@@ -182,6 +211,10 @@ def analyze(image: Path, case: Path, config: dict, profile: str, backend: str,
         checkpoint()
         render(case)
         logging.info('Case %s: %s processes, %s findings', manifest['status'], len(data['processes']), len(data['findings']))
+        from collections import Counter
+        statuses = Counter(e['status'] for e in current.values())
+        logging.info('Checks: %s', ', '.join(f'{count} {status}' for status, count in sorted(statuses.items())))
+        logging.info('Report: %s', case / 'report.html')
         return 0 if manifest['status'] == 'complete' else 2
     except KeyboardInterrupt:
         for entry in manifest['executions']:

@@ -129,6 +129,12 @@ def render(case: Path) -> Path:
     status_class = manifest['status'] if manifest['status'] in ('complete', 'partial', 'failed') else 'other'
     warning = ('No findings detected by executed checks' if not data['findings'] else
                'Findings are investigation hypotheses. Validate against the linked source artifacts.')
+    verification = manifest.get('image_verification', {})
+    hash_notice = ''
+    if verification.get('sha256_skipped'):
+        hash_notice = 'Image SHA-256 skipped; identity checked using file metadata only.'
+    elif verification.get('resume_identity') == 'metadata_only':
+        hash_notice = 'Image SHA-256 recorded this run; original case identity matched using file metadata only.'
     content = f'''<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
@@ -145,7 +151,7 @@ input{{padding:.6rem;width:28rem;max-width:90%;background:#fff;color:#111}} .not
 <div class="header-top"><h1>Memnolyze</h1><div class="badges"><span class="badge">Profile: <strong>{escape(manifest.get('profile', 'not recorded'))}</strong></span><span class="badge {status_class}">{escape(manifest['status']).upper()}</span><span class="badge">{'Offline' if manifest['offline'] else 'Symbol downloads allowed'}</span></div></div>
 <p class="case-meta">{escape(Path(manifest['image']['path']).name)} · Windows build {escape(windows_build or 'see metadata')} · {escape(version_label)} · Plugin time {escape(runtime)}</p>
 <div class="metrics">{stats}</div><div class="header-bottom"><div aria-label="Findings by severity">{severity_html}</div><span>Checks: {escape(' · '.join(coverage_parts))}</span></div>
-<p class="case-note">{escape('No findings detected by executed checks' if not data['findings'] else 'Investigation hypotheses; findings require analyst validation.')}</p></header>
+<p class="case-note">{escape('No findings detected by executed checks' if not data['findings'] else 'Investigation hypotheses; findings require analyst validation.')} {escape(hash_notice)}</p></header>
 <details class="case-metadata"><summary>Case metadata · image hash · OS details</summary><p>{escape(warning)} FindEvil is experimental; absent detections on Windows Server do not provide assurance. Counts represent source observations, not deduplicated objects. Plugin time includes all attempts.</p><pre>{escape(json.dumps({'image': manifest['image'], 'created_at': manifest['created_at'], 'schema_version': manifest['schema_version'], 'offline': manifest['offline'], 'backends': manifest['backend_info']}, indent=2))}</pre></details>
 <h2>Findings</h2><label>Filter findings <input data-filter="findings" placeholder="Severity, PID, category or title"></label>
 {expand_controls('findings')}

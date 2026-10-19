@@ -21,15 +21,25 @@ def write_json(path: Path, value: Any) -> None:
 def read_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding='utf-8-sig'))
 
-def fingerprint(path: Path) -> dict:
+def text_tail(path: Path, limit: int = 8192) -> str:
+    if not path.is_file():
+        return ''
+    with path.open('rb') as stream:
+        stream.seek(0, 2)
+        stream.seek(max(0, stream.tell() - limit))
+        return stream.read(limit).decode('utf-8', errors='replace')
+
+def fingerprint(path: Path, skip_hash: bool = False) -> dict:
     path = path.resolve(strict=True)
     if not path.is_file() or path.stat().st_size == 0:
         raise ValueError('Image must be a nonempty regular file')
     before = path.stat()
-    digest = hashlib.sha256()
-    with path.open('rb') as stream:
-        for block in iter(lambda: stream.read(8 * 1024 * 1024), b''):
-            digest.update(block)
+    digest = None
+    if not skip_hash:
+        digest = hashlib.sha256()
+        with path.open('rb') as stream:
+            for block in iter(lambda: stream.read(8 * 1024 * 1024), b''):
+                digest.update(block)
     after = path.stat()
     if (before.st_size, before.st_mtime_ns) != (after.st_size, after.st_mtime_ns):
         raise ValueError('Image changed while hashing')
@@ -38,7 +48,8 @@ def fingerprint(path: Path) -> dict:
         sidecars = [str(p.resolve()) for p in path.parent.iterdir()
                     if p.is_file() and p.suffix.lower() in ('.vmsn', '.vmss')]
     return {'path': str(path), 'size': before.st_size, 'mtime_ns': before.st_mtime_ns,
-            'sha256': digest.hexdigest(), 'format_hint': path.suffix.lower(), 'sidecars': sidecars}
+            'sha256': digest.hexdigest() if digest else None,
+            'format_hint': path.suffix.lower(), 'sidecars': sidecars}
 
 def child_env(state: Path) -> dict[str, str]:
     env = os.environ.copy()

@@ -60,6 +60,10 @@ Historical absolute image/tool paths in the example document the original analys
 
 Project documentation, source comments, CLI messages, and report controls use **English**. Original forensic records are retained in their source language; translating them would change evidence.
 
+Version **0.1.1** fixes Volatility discovery through Python's `-c` launcher and prefers the engine installed in the active Python environment. The fix also applies to the reported Python 3.13 launch failure; complete image validation on Python 3.13 has not been performed.
+
+Version **0.1.2** adds resolved MemProcFS module/native paths, an isolated API-import check, explicit discovery scope (`image_validated: false`), and concise backend failure hints. Doctor success is not an image initialization test.
+
 The project, Python package, and command are named **memnolyze**. Historical commands in the included case logs/manifest retain the original tool name as recorded during analysis; they are evidence history, not current setup instructions.
 
 ## Symbols and network access
@@ -101,13 +105,23 @@ The orchestrator makes no network connections itself. Offline control relies on 
 .\.venv\Scripts\python.exe -m memnolyze report --case "D:\Results\case"
 ```
 
-Options: `--profile quick|standard|deep`, `--backend volatility|memprocfs|all`, `--pid`, `--config`, `--resume`, `--offline`, `--allow-symbol-downloads`, `--verbose`, repeatable `--plugin LOGICAL_NAME`, and repeatable `--rerun LOGICAL_NAME|triage`.
+Options: `--profile quick|standard|deep`, `--backend volatility|memprocfs|all`, `--pid`, `--config`, `--resume`, `--skip-hash`, `--offline`, `--allow-symbol-downloads`, `--verbose`, repeatable `--plugin LOGICAL_NAME`, and repeatable `--rerun LOGICAL_NAME|triage`.
 
 Volatility PID arguments are added only when the installed plugin advertises `--pid`; global checks remain global. MemProcFS PID scope limits process/module/VAD/thread exports, while forensic processing and network extraction remain global. Ambiguous artifact attribution remains unresolved rather than being guessed.
 
 Exit codes: `0` completed requested checks; `2` partial results/backend failure; `1` invalid arguments or IO failure; `130` interrupted. `empty` means valid empty output, not a positive extraction; empty OS/pslist baselines are failures. `unsupported` plugins are visibly skipped and do not count as executed checks. Historical failures remain visible after successful retries.
 
-Resume requires the same configuration, PID scope, offline policy, and image hash. Profile/backend/plugin selection can change, and existing case artifacts remain available. Upgrading Quick to Standard/Deep refreshes MemProcFS extraction to obtain VADs and threads. Ctrl+C retains completed results. After a hard kill, `.analysis.lock` may remain: verify that no analyzer is running before removing that individual lock.
+Resume requires the same configuration, PID scope, offline policy, and image identity. By default, SHA-256 is recomputed and compared with the original case hash. Profile/backend/plugin selection can change, and existing case artifacts remain available. Upgrading Quick to Standard/Deep refreshes MemProcFS extraction to obtain VADs and threads. Ctrl+C retains completed results. After a hard kill, `.analysis.lock` may remain: verify that no analyzer is running before removing that individual lock.
+
+For large images, add `--skip-hash` to a new analysis or a retry to avoid reading the entire image just for hashing:
+
+```powershell
+python -m memnolyze analyze --image "D:\Images\server.vmem" --output "D:\Results\case" --resume --skip-hash --config config.portable.json
+```
+
+Keep the original configuration and scope options when resuming. With `--skip-hash`, resume compares the resolved image path, size, and modification time; this cannot detect content changes that preserve those attributes. The manifest records each run's verification method, and the report identifies skipped hashing. Any original SHA-256 remains preserved as a historical fingerprint, not a fresh verification. New unhashed cases record a null image hash. If hashing is enabled later, the observed hash is recorded in verification history; identity against the original unhashed input still relies on metadata. Raw output artifact hashes remain enabled and verified regardless of this flag. Hashing remains the default whenever the flag is omitted.
+
+During analysis, failed or incomplete checks are printed immediately with the backend/plugin, status, exit code when available, and a short excerpt of the engine's own error output. Excerpts are limited to eight lines and 1,600 characters; full stdout/stderr remain in the case directory, with absolute paths printed for follow-up. MemProcFS extraction errors include operation counts and up to three original error examples. The final console summary includes check statuses and the report path. No `--verbose` flag is required to see failures.
 
 ## Configuration and profiles
 
@@ -169,7 +183,7 @@ Initial rules cover scan-only processes, combined memory/thread anomalies, injec
 .\.venv\Scripts\python.exe -m pytest
 ```
 
-The suite supports both runners. **26 tests passed** in development; the unittest runner was used because package downloads were restricted. See [Quick validation](docs/VALIDATION.md), [Standard validation](docs/VALIDATION-STANDARD.md), [Deep validation](docs/VALIDATION-DEEP.md), and [architecture](docs/ARCHITECTURE.md).
+The suite supports both runners. **48 tests passed** after the hashing and console diagnostics updates; the unittest runner was used because package downloads were restricted. See [Quick validation](docs/VALIDATION.md), [Standard validation](docs/VALIDATION-STANDARD.md), [Deep validation](docs/VALIDATION-DEEP.md), and [architecture](docs/ARCHITECTURE.md).
 
 | Actual test-image run | Processes | Regions | Thread observations | Findings | Status |
 |---|---:|---:|---:|---:|---|

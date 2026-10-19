@@ -5,7 +5,7 @@ from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
-ROOT_FILES = ('README.md', 'AGENTS.md', 'pyproject.toml', '.gitignore',
+ROOT_FILES = ('README.md', 'pyproject.toml', '.gitignore',
               'config.example.json', 'config.portable.json', 'examples/README.md')
 TREES = {'src': {'.py'}, 'tests': {'.py'}, 'scripts': {'.py', '.ps1'},
          'docs': {'.md'}, 'examples/deep-case': {'.html', '.json', '.jsonl', '.txt', '.log'}}
@@ -15,7 +15,8 @@ def package() -> Path:
     for directory, extensions in TREES.items():
         selected.extend(path for path in (ROOT / directory).rglob('*')
                         if path.is_file() and not path.is_symlink() and
-                        '__pycache__' not in path.parts and path.suffix in extensions)
+                        '__pycache__' not in path.parts and path.suffix in extensions
+                        and path.name.lower() not in ('agents.md', 'troubleshooting.md'))
     if not (ROOT / 'examples/deep-case/report.html').is_file():
         raise FileNotFoundError('The selected examples/deep-case report must be present')
     destination = ROOT / 'dist/memnolyze-source.zip'

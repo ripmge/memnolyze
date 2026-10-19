@@ -20,6 +20,8 @@ def main(argv: list[str] | None = None) -> int:
     analyze.add_argument('--pid', type=int)
     analyze.add_argument('--config', type=Path)
     analyze.add_argument('--resume', action='store_true')
+    analyze.add_argument('--skip-hash', action='store_true',
+                         help='Skip image SHA-256; resume checks path, size and modification time only')
     network = analyze.add_mutually_exclusive_group()
     network.add_argument('--offline', dest='offline', action='store_true', default=True)
     network.add_argument('--allow-symbol-downloads', dest='offline', action='store_false')
@@ -40,14 +42,15 @@ def main(argv: list[str] | None = None) -> int:
             return 0
         config = load_config(args.config)
         if args.action == 'doctor':
-            print(json.dumps({'python': sys.version, 'volatility': volatility.discover(config),
+            print(json.dumps({'python': sys.version, 'python_executable': sys.executable,
+                              'volatility': volatility.discover(config),
                               'memprocfs': memprocfs.discover(config)}, indent=2))
             return 0
         if args.pid is not None and args.pid < 0:
             raise ValueError('PID must be nonnegative')
         from .pipeline import analyze as run
         return run(args.image, args.output, config, args.profile, args.backend, args.offline,
-                   args.resume, args.pid, args.plugin, args.rerun)
+                   args.resume, args.pid, args.plugin, args.rerun, skip_hash=args.skip_hash)
     except (OSError, ValueError) as exc:
         logging.error('%s', exc)
         return 1

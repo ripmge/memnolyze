@@ -1,27 +1,72 @@
 """Isolated native API worker. No drive mount or Dokany required."""
-import importlib.util
 import json
+import os
+import subprocess
 import sys
 import time
 from pathlib import Path
 from typing import Any
-from ..io import write_json, utcnow
+from ..io import child_env, write_json, utcnow
+
+IMPORT_PROBE = r'''
+import json, os, sys
+from pathlib import Path
+location = sys.argv[1]
+dll_directory = None
+if location:
+    sys.path.insert(0, location)
+    if os.name == 'nt':
+        dll_directory = os.add_dll_directory(location)
+import memprocfs
+if not callable(getattr(memprocfs, 'Vmm', None)):
+    raise ImportError('The imported memprocfs module does not expose the Vmm API')
+module_file = str(Path(memprocfs.__file__).resolve())
+native = sys.modules.get(memprocfs.Vmm.__module__)
+native_file = getattr(native, '__file__', None)
+print('MEMNOLYZE_PROBE=' + json.dumps({'module_file': module_file,
+      'native_module_file': str(Path(native_file).resolve()) if native_file else None}))
+'''
 
 def discover(config: dict) -> dict:
     supplied = config['memprocfs_path']
     path = Path(supplied).resolve() if supplied else None
+    result = {'available': False, 'path': str(path) if path else None,
+              'configured_path': str(path) if path else None,
+              'source': 'configured_directory' if path else 'python_import',
+              'python_executable': sys.executable, 'check': 'native_api_import',
+              'image_validated': False,
+              'integration': 'Python API in isolated subprocess; image support checked during analysis'}
     if path and not (path / 'memprocfs.py').is_file():
-        return {'available': False, 'error': 'memprocfs.py missing from configured directory'}
-    return {'available': bool(path or importlib.util.find_spec('memprocfs')),
-            'path': str(path) if path else None,
-            'integration': 'Python API in isolated subprocess; version queried after initialization'}
+        return {**result, 'error': 'memprocfs.py missing from configured directory'}
+    try:
+        probe = subprocess.run([sys.executable, '-c', IMPORT_PROBE, str(path) if path else ''],
+                               capture_output=True, text=True, encoding='utf-8', errors='replace',
+                               timeout=30, env=child_env(Path(config['state_dir'])))
+        result['exit_code'] = probe.returncode
+        if probe.returncode:
+            diagnostic = (probe.stderr.strip() or probe.stdout.strip())[-1500:]
+            return {**result, 'error': 'MemProcFS API import failed: ' +
+                    (diagnostic or f'process exited with code {probe.returncode} without diagnostic output')}
+        line = next((line for line in reversed(probe.stdout.splitlines())
+                     if line.startswith('MEMNOLYZE_PROBE=')), None)
+        if line is None:
+            return {**result, 'error': 'MemProcFS import probe returned no module metadata'}
+        metadata = json.loads(line.split('=', 1)[1])
+        return {**result, **metadata, 'available': True,
+                'path': str(Path(metadata['module_file']).parent), 'error': None}
+    except (OSError, ValueError, subprocess.TimeoutExpired) as exc:
+        return {**result, 'error': str(exc)}
 
 def worker(job_path: Path) -> int:
     job = json.loads(job_path.read_text(encoding='utf-8'))
     config = job['config']
     target = Path(job['target'])
+    dll_directory = None
     if config['memprocfs_path']:
-        sys.path.insert(0, str(Path(config['memprocfs_path']).resolve()))
+        location = str(Path(config['memprocfs_path']).resolve())
+        sys.path.insert(0, location)
+        if os.name == 'nt':
+            dll_directory = os.add_dll_directory(location)
     import memprocfs as m
     args = ['-device', job['image'], '-disable-python', '-disable-yara']
     # Only the Microsoft symbol service is permitted when explicitly enabled.
@@ -106,7 +151,11 @@ def worker(job_path: Path) -> int:
             export('forensic', {'status': 'complete', 'progress': 100,
                                 'source': '/forensic/findevil/findevil.txt'})
     finally:
-        vmm.close()
+        try:
+            vmm.close()
+        finally:
+            if dll_directory is not None:
+                dll_directory.close()
     return 0
 
 if __name__ == '__main__':

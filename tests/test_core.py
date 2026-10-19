@@ -4,6 +4,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 from memnolyze.config import load_config
 from memnolyze.detectors import detect
 from memnolyze.io import fingerprint, rows, write_json, execute
@@ -12,6 +13,15 @@ from memnolyze.reporting import escape, evidence_links
 from memnolyze.backends.volatility import resolve, plausible_info
 
 class CoreTests(unittest.TestCase):
+    def test_skip_hash_does_not_read_image(self):
+        with tempfile.TemporaryDirectory() as directory:
+            image = Path(directory) / 'large image.bin'
+            image.write_bytes(b'abc')
+            with patch.object(Path, 'open', side_effect=AssertionError('Image must not be read')):
+                metadata = fingerprint(image, skip_hash=True)
+            self.assertIsNone(metadata['sha256'])
+            self.assertEqual(metadata['size'], 3)
+
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory()
         self.root = Path(self.temporary.name)

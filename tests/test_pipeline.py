@@ -36,11 +36,42 @@ class PipelineTests(unittest.TestCase):
         import json
         return [sys.executable, '-c', 'print(' + repr('\n'.join(json.dumps(r) for r in records.get(logical, []))) + ')']
 
-    def run_case(self, resume=False, plugins=None):
+    def run_case(self, resume=False, plugins=None, skip_hash=False):
         with patch('memnolyze.pipeline.volatility.discover', return_value=self.capability), \
              patch('memnolyze.pipeline.volatility.build_command', side_effect=self.command):
             return analyze(self.image, self.case, self.config, 'quick', 'volatility', True,
-                           resume, None, plugins or ['pslist', 'broken', 'missing', 'malfind'])
+                           resume, None, plugins or ['pslist', 'broken', 'missing', 'malfind'],
+                           skip_hash=skip_hash)
+
+    def test_skip_hash_resume_preserves_existing_hash_and_checks_metadata(self):
+        self.run_case(plugins=['pslist'])
+        before = read_json(self.case / 'manifest.json')
+        self.assertEqual(self.run_case(True, ['pslist'], skip_hash=True), 0)
+        after = read_json(self.case / 'manifest.json')
+        self.assertEqual(before['image'], after['image'])
+        self.assertEqual(len(before['executions']), len(after['executions']))
+        self.assertEqual(after['image_verification']['resume_identity'], 'metadata_only')
+        self.assertTrue(after['image_verification']['sha256_skipped'])
+        self.assertIn('Image SHA-256 skipped', (self.case / 'report.html').read_text(encoding='utf-8'))
+        self.image.write_bytes(b'changed')
+        with self.assertRaisesRegex(ValueError, 'modification time differs'):
+            self.run_case(True, ['pslist'], skip_hash=True)
+
+    def test_unhashed_case_resume_and_later_hash_do_not_claim_hash_match(self):
+        self.assertEqual(self.run_case(plugins=['pslist'], skip_hash=True), 0)
+        self.assertEqual(self.run_case(True, ['pslist'], skip_hash=True), 0)
+        self.assertEqual(self.run_case(True, ['pslist']), 0)
+        manifest = read_json(self.case / 'manifest.json')
+        self.assertIsNone(manifest['image']['sha256'])
+        self.assertEqual(manifest['image_verification']['resume_identity'], 'metadata_only')
+        self.assertIsNotNone(manifest['image_verification_history'][-1]['observed_sha256'])
+
+    def test_skip_hash_still_verifies_cached_artifacts(self):
+        self.run_case(plugins=['pslist'], skip_hash=True)
+        record = read_json(self.case / 'manifest.json')['executions'][0]
+        (self.case / record['source_file']).write_text('[]')
+        with self.assertRaisesRegex(ValueError, 'integrity'):
+            self.run_case(True, ['pslist'], skip_hash=True)
 
     def test_failure_isolation_report_and_immutable_resume(self):
         self.assertEqual(self.run_case(), 2)
@@ -64,6 +95,17 @@ class PipelineTests(unittest.TestCase):
         self.image.write_bytes(b'different')
         with self.assertRaisesRegex(ValueError, 'hash differs'):
             self.run_case(True, ['pslist'])
+
+    def test_backend_error_is_visible_during_run(self):
+        command = [sys.executable, '-c', 'import sys; print("RuntimeError: engine test failure", file=sys.stderr); sys.exit(3)']
+        with patch('memnolyze.pipeline.volatility.discover', return_value=self.capability), \
+             patch('memnolyze.pipeline.volatility.build_command', return_value=command), \
+             self.assertLogs(level='ERROR') as captured:
+            result = analyze(self.image, self.case, self.config, 'quick', 'volatility',
+                             True, False, None, ['pslist'], skip_hash=True)
+        self.assertEqual(result, 2)
+        self.assertIn('RuntimeError: engine test failure', '\n'.join(captured.output))
+        self.assertIn('volatility/info: failed (exit 3)', '\n'.join(captured.output))
 
     def test_resume_rejects_tampered_artifact(self):
         self.run_case(plugins=['pslist'])
