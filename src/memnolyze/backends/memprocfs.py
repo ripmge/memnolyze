@@ -1,12 +1,42 @@
 """Isolated native API worker. No drive mount or Dokany required."""
 import json
+import hashlib
+import shutil
+import re
 import os
 import subprocess
 import sys
 import time
 from pathlib import Path
 from typing import Any
-from ..io import child_env, write_json, utcnow
+from ..io import child_env, write_json, utcnow, text_tail
+
+
+def yara_settings(config: dict) -> dict:
+    rules = config.get('memprocfs_yara_rules')
+    accepted = config.get('memprocfs_accept_elastic_license', False)
+    if (rules or accepted) and not config['memprocfs_forensic']:
+        raise ValueError('YARA scanning requires forensic mode')
+    entry = None
+    if rules:
+        path = Path(rules).resolve(strict=True)
+        visited: dict[str, dict] = {}
+        def inspect(source: Path) -> dict:
+            source = source.resolve(strict=True)
+            if str(source) in visited:
+                return visited[str(source)]
+            if not source.is_file() or not source.stat().st_size:
+                raise ValueError('YARA rules must be nonempty regular files')
+            content = source.read_bytes()
+            item = {'path': str(source), 'sha256': hashlib.sha256(content).hexdigest(), 'size': len(content)}
+            visited[str(source)] = item
+            # Source includes are local dependencies; compiled rules have no source includes.
+            for dependency in re.findall(r'^\s*include\s+"([^"\r\n]+)"', content.decode('utf-8', errors='replace'), re.MULTILINE):
+                inspect(source.parent / dependency)
+            return item
+        entry = {**inspect(path), 'dependencies': [item for key, item in visited.items() if key != str(path)]}
+    return {'custom_rules': entry, 'elastic_license_accepted': accepted,
+            'enabled': bool(rules or accepted)}
 
 IMPORT_PROBE = r'''
 import json, os, sys
@@ -68,7 +98,22 @@ def worker(job_path: Path) -> int:
         if os.name == 'nt':
             dll_directory = os.add_dll_directory(location)
     import memprocfs as m
-    args = ['-device', job['image'], '-disable-python', '-disable-yara']
+    settings = yara_settings(config)
+    args = ['-device', job['image'], '-disable-python', '-printf']
+    if not settings['enabled']:
+        args += ['-disable-yara']
+    else:
+        if settings['elastic_license_accepted']:
+            args += ['-license-accept-elastic-license-2-0']
+        else:
+            # Acceptance can be cached by MemProcFS; enforce the current run's policy.
+            args += ['-disable-yara-builtin']
+        if settings['custom_rules']:
+            args += ['-forensic-yara-rules', settings['custom_rules']['path']]
+            shutil.copyfile(settings['custom_rules']['path'], target / 'yara-input.rules')
+            for index, dependency in enumerate(settings['custom_rules']['dependencies']):
+                shutil.copyfile(dependency['path'], target / f'yara-include-{index:04d}.rules')
+    write_json(target / 'yara_config.json', settings)
     # Only the Microsoft symbol service is permitted when explicitly enabled.
     if job['offline'] or not config['memprocfs_symbols']:
         args += ['-disable-symbolserver', '-disable-symbols']
@@ -150,6 +195,37 @@ def worker(job_path: Path) -> int:
             (target / 'findevil.txt').write_bytes(data)
             export('forensic', {'status': 'complete', 'progress': 100,
                                 'source': '/forensic/findevil/findevil.txt'})
+            if settings['enabled']:
+                diagnostics = text_tail(target / 'output.jsonl') + text_tail(target / 'stderr.txt')
+                if 'yr_initialize() failed' in diagnostics.lower():
+                    raise ValueError('YARA engine initialization failed; original engine output contains the error')
+                def save_vfs(folder: str, name: str, destination: str) -> None:
+                    listing = vmm.vfs.list(folder)
+                    if name not in listing:
+                        raise ValueError(f'Requested YARA artifact is unavailable: {folder}/{name}')
+                    if listing[name]['size'] > config['max_vfs_bytes']:
+                        raise ValueError(f'YARA artifact exceeds export limit: {folder}/{name}')
+                    content = (vmm.vfs.read(folder + '/' + name, config['max_vfs_bytes'])
+                               if listing[name]['size'] else b'')
+                    if len(content) != listing[name]['size']:
+                        raise ValueError(f'Incomplete YARA artifact: {folder}/{name}')
+                    (target / destination).write_bytes(content)
+                if settings['custom_rules']:
+                    for name in ('match-count.txt', 'result.txt', 'rules.txt'):
+                        save_vfs('/forensic/yara', name, 'yara-' + name)
+                    count = int((target / 'yara-match-count.txt').read_text().strip())
+                    if count < 0:
+                        raise ValueError('Invalid YARA match count')
+                    from ..yara import matches
+                    parsed = sum(1 for _ in matches(target / 'yara-result.txt'))
+                    if parsed != count:
+                        raise ValueError(f'YARA match count mismatch: expected {count}, parsed {parsed}')
+                    export('yara_status', {'status': 'complete', 'match_count': count})
+                if settings['elastic_license_accepted']:
+                    for name in ('yara.txt', 'yara_rules.txt'):
+                        save_vfs('/forensic/findevil', name, 'findevil-' + name)
+                if yara_settings(config) != settings:
+                    raise ValueError('YARA input rules changed during scanning')
     finally:
         try:
             vmm.close()

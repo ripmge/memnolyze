@@ -51,7 +51,7 @@ Module/network counts preserve observations from multiple sources; they are not 
 
 Findings comprise 11 memory-injection indicators, 121 loader indicators, six other backend indicators, five thread indicators, and **four "Loader anomaly with network activity" correlations**. Loader indicators comprise 118 ldrmodules records, two positive PEB flags, and one FindEvil loader indicator. All 147 findings are associated with a process and have medium severity. Correlations have medium confidence; individual indicators have low confidence. These are investigation hypotheses, not malware confirmations.
 
-The original local Standard report was approximately 10.4 MB, without external resources. That case is not included in the archive; see the [included Deep example](../examples/deep-case/report.html). Full browser performance was not benchmarked.
+The original local Standard report was approximately 10.4 MB, without external resources. That case is not included in the archive; see the [included Quick example](../examples/README.md). Full browser performance was not benchmarked.
 
 ## Integration corrections
 

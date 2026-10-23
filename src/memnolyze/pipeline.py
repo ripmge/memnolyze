@@ -7,7 +7,7 @@ import time
 import uuid
 from pathlib import Path
 from .backends import volatility, memprocfs
-from .config import PROFILES
+from .config import PROFILES, DEFAULTS
 from .detectors import detect
 from .io import fingerprint, write_json, read_json, execute, child_env, rows, utcnow, text_tail
 from .diagnostics import failure_hint, log_execution
@@ -26,8 +26,20 @@ def analyze(image: Path, case: Path, config: dict, profile: str, backend: str,
     if case.exists() and any(case.iterdir()) and not (resume and manifest_path.is_file()):
         raise ValueError('Output must be empty; use --resume for an existing case')
     previous = read_json(manifest_path) if resume and manifest_path.exists() else None
-    if previous and (previous['pid'] != pid or previous['offline'] != offline or previous['config'] != config):
-        raise ValueError('Resume requires the same configuration, offline policy and PID scope')
+    if backend != 'volatility':
+        # Validate requested rule inputs before reading a potentially large image.
+        settings = memprocfs.yara_settings(config)
+        logging.info('MemProcFS YARA: custom rules %s; Elastic rules %s',
+                     'enabled' if settings['custom_rules'] else 'disabled',
+                     'explicitly enabled' if settings['elastic_license_accepted'] else 'disabled')
+    if previous:
+        old_config = {**DEFAULTS, **previous['config']}
+        changes = {key for key in config if old_config.get(key) != config[key]}
+        yara_change = changes <= {'memprocfs_yara_rules', 'memprocfs_accept_elastic_license'}
+        if (previous['pid'] != pid or previous['offline'] != offline or
+                (changes and not (yara_change and 'triage' in (rerun or []) and backend != 'volatility'))):
+            raise ValueError('Resume requires the same configuration, offline policy and PID scope; '
+                             'YARA settings may change with --rerun triage')
     logging.info('Skipping image SHA-256; checking file metadata only' if skip_hash else
                  'Hashing input image (streaming SHA-256)')
     metadata = fingerprint(image, skip_hash=skip_hash)
@@ -62,6 +74,10 @@ def analyze(image: Path, case: Path, config: dict, profile: str, backend: str,
                             'pid': pid, 'offline': offline, 'config': config, 'executions': [],
                             'backend_info': {}, 'capabilities': {}}
     manifest.update(status='running', updated_at=utcnow(), profile=profile)
+    if previous and changes:
+        manifest.setdefault('configuration_history', []).append(
+            {'recorded_at': utcnow(), 'config': manifest['config']})
+    manifest['config'] = config
     manifest['image_verification'] = verification
     manifest.setdefault('image_verification_history', []).append({**verification,
         'observed_sha256': metadata['sha256']})
@@ -89,6 +105,11 @@ def analyze(image: Path, case: Path, config: dict, profile: str, backend: str,
             path = case / source
             if not path.is_file() or file_hash(path) != digest:
                 raise ValueError(f'Cached artifact integrity check failed: {source}')
+        if engine == 'memprocfs' and config.get('memprocfs_yara_rules'):
+            source = record.get('artifacts', {}).get('yara_config')
+            if not source or read_json(case / source) != memprocfs.yara_settings(config):
+                logging.info('YARA rules changed; refreshing MemProcFS extraction')
+                return False
         return bool(record.get('artifact_hashes'))
     try:
         engines = ['volatility', 'memprocfs'] if backend == 'all' else [backend]
@@ -163,6 +184,11 @@ def analyze(image: Path, case: Path, config: dict, profile: str, backend: str,
                                      if p.stem not in ('job', 'invocation')}
                         if (target / 'findevil.txt').exists():
                             artifacts['findevil'] = (target / 'findevil.txt').relative_to(case).as_posix()
+                        for path in target.glob('*.txt'):
+                            if path.name != 'stderr.txt':
+                                artifacts.setdefault(path.stem, path.relative_to(case).as_posix())
+                        for path in target.glob('*.rules'):
+                            artifacts[path.stem.replace('-', '_')] = path.relative_to(case).as_posix()
                         record['artifacts'] = artifacts
                         if 'info' in artifacts:
                             manifest['backend_info']['memprocfs'] = read_json(case / artifacts['info'])

@@ -9,5 +9,7 @@
   "plugin_args": {},
   "memprocfs_forensic": true,
   "memprocfs_symbols": false,
+  "memprocfs_yara_rules": null,
+  "memprocfs_accept_elastic_license": false,
   "max_vfs_bytes": 67108864
 }

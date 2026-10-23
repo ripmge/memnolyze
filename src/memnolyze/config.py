@@ -14,6 +14,7 @@ DEFAULTS: dict[str, Any] = {
     'state_dir': '.state', 'timeout_seconds': 1800, 'forensic_timeout_seconds': 1800,
     'symbol_dirs': [], 'plugins': None, 'plugin_args': {},
     'memprocfs_forensic': True, 'memprocfs_symbols': False,
+    'memprocfs_yara_rules': None, 'memprocfs_accept_elastic_license': False,
     'max_vfs_bytes': 64 * 1024 * 1024,
 }
 
@@ -35,9 +36,14 @@ def load_config(path: Path | None) -> dict[str, Any]:
         raise ValueError('state_dir must be a nonempty path string')
     if config['memprocfs_path'] is not None and not isinstance(config['memprocfs_path'], str):
         raise ValueError('memprocfs_path must be a path string or null')
-    for key in ('memprocfs_forensic', 'memprocfs_symbols'):
+    for key in ('memprocfs_forensic', 'memprocfs_symbols', 'memprocfs_accept_elastic_license'):
         if not isinstance(config[key], bool):
             raise ValueError(f'{key} must be boolean')
+    rules = config['memprocfs_yara_rules']
+    if rules is not None and (not isinstance(rules, str) or not rules.strip()):
+        raise ValueError('memprocfs_yara_rules must be a nonempty path string or null')
+    if (rules or config['memprocfs_accept_elastic_license']) and not config['memprocfs_forensic']:
+        raise ValueError('YARA scanning requires memprocfs_forensic: true')
     if not isinstance(config['symbol_dirs'], list) or not all(isinstance(p, str) for p in config['symbol_dirs']):
         raise ValueError('symbol_dirs must be an array of path strings')
     plugins = config['plugins']

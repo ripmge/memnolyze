@@ -93,7 +93,8 @@ def render(case: Path) -> Path:
             if not (identity == 'executions' and index == len(headers) - 1):
                 menu = ('<details class="column-filter"><summary>Filter</summary><div class="filter-panel">'
                         f'<input type="search" aria-label="Search values in {escape(header)}" placeholder="Search values">'
-                        '<p>No selection = all values. Counts include all rows.</p>'
+                        '<p>Select all values, then uncheck entries to exclude them. Clear selection resets this filter. Counts include all rows.</p>'
+                        '<button type="button" data-select-all-column>Select all</button> '
                         '<button type="button" data-clear-column>Clear selection</button>'
                         '<div class="filter-options"></div></div></details>')
             head.append(f'<th scope="col"><button type="button" data-sort aria-label="Sort by {escape(header)}">{escape(header)} ↕</button>{menu}</th>')
@@ -135,11 +136,18 @@ def render(case: Path) -> Path:
         hash_notice = 'Image SHA-256 skipped; identity checked using file metadata only.'
     elif verification.get('resume_identity') == 'metadata_only':
         hash_notice = 'Image SHA-256 recorded this run; original case identity matched using file metadata only.'
+    yara_config = manifest.get('config', {})
+    yara_modes = [label for key, label in [('memprocfs_yara_rules', 'custom rules'),
+                                          ('memprocfs_accept_elastic_license', 'Elastic rules')]
+                  if yara_config.get(key)]
+    if yara_modes:
+        hash_notice += ' YARA requested: ' + ', '.join(yara_modes) + '; see check status and original outputs.'
     content = f'''<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
 <title>Memnolyze — local case report</title><style>
 body{{font:15px system-ui;margin:2rem;background:#101820;color:#e1e9ef}} a{{color:#74c7ff}} h1,h2{{color:#bde5ff}}
+.collapse-current{{position:sticky;bottom:.75rem;z-index:2;width:fit-content;margin:.75rem 0 .75rem auto}}details:has(details[open]) > .collapse-current{{visibility:hidden}}summary{{scroll-margin-top:1rem}}
 table{{border-collapse:collapse;width:100%;margin:1rem 0;background:#172632}}td,th{{padding:.6rem;border-bottom:1px solid #344653;text-align:left;vertical-align:top}}
 th{{cursor:pointer}}pre{{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;max-height:24rem;overflow:auto}}summary{{cursor:pointer}}
 th{{position:relative;vertical-align:top}}th [data-sort]{{background:transparent;border:0;padding:0;font-weight:bold;text-align:left}}.column-filter{{font-weight:normal;font-size:12px;margin-top:.6rem}}.filter-panel{{position:absolute;z-index:10;left:0;top:100%;min-width:270px;max-width:380px;padding:.8rem;background:#203442;border:1px solid #74c7ff;box-shadow:0 4px 16px #0008}}.filter-panel input[type="search"]{{width:230px}}.filter-panel p{{font-size:11px}}.filter-options{{max-height:260px;overflow:auto;margin-top:.6rem}}.filter-options label{{display:flex;gap:.5rem;align-items:start;padding:.3rem;overflow-wrap:anywhere}}.filter-options input[type="checkbox"]{{width:auto;margin-top:.2rem}}[hidden]{{display:none!important}}

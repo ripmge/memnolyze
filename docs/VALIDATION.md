@@ -65,7 +65,7 @@ The findings consist of 11 malfind regions, six FindEvil `PROC_DEBUG` indicators
 
 MemProcFS could not retrieve user paths/command lines for PID 4, 104, and 1708: six individual missing fields recorded in the original `errors.json`. Process/module/network extraction and forensic processing succeeded. No missing field values were invented.
 
-The Quick report remains in the original local `cases/ransomcase-quick` directory, which is excluded from the archive. The distributable demonstration is [the actual Deep case](../examples/deep-case/report.html).
+The original Quick run remains under local `cases/ransomcase-quick`. Its distributable copy, with the current report UI and unchanged raw evidence, is the [RansomCase1 example](../examples/README.md) under `examples/ransomcase1`.
 
 ## Independent backends
 

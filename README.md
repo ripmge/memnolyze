@@ -45,22 +45,24 @@ The original development image was `ransomcare-case1.dmp/ransomcare5.dmp`: a fil
 
 ## Included example and source archive
 
-Open the actual [Deep example report](examples/deep-case/report.html) locally. The example comes from the publicly obtained demonstration memory image used during development, and includes raw records, normalized data, its manifest, and execution logs so relative evidence links remain usable. It is not a synthetic analysis. Its status remains `partial` because of the documented MemProcFS VAD limitation.
+The [RansomCase1 example](examples/README.md) uses the actual, completed **Quick** analysis of the public demonstration image: 134 processes and 23 findings. Its interactive report is approximately 2.2 MB instead of the previous Deep example's 14.7 MB. Raw records, normalized data, its manifest, and logs preserve traceability. The example README shows the recorded results directly in GitHub. The HTML remains an ordinary report file; repository preview support depends on GitHub.
 
 ```powershell
 # View the example without a memory image or running engines:
-Start-Process .\examples\deep-case\report.html
+Start-Process .\examples\ransomcase1\report.html
 # Regenerate it after changing the renderer:
-.\.venv\Scripts\python.exe -m memnolyze report --case examples/deep-case
+.\.venv\Scripts\python.exe -m memnolyze report --case examples/ransomcase1
 ```
 
-Historical absolute image/tool paths in the example document the original analysis environment. They are not needed to view or regenerate the report. Use your own image and output directory for new analyses. Paths under `cases/` in validation notes describe the original local runs; only the Deep case is included in the archive, under `examples/deep-case/`.
+Historical absolute image/tool paths in the example document the original analysis environment. They are not needed to view or regenerate the report. Use your own image and output directory for new analyses. Paths under `cases/` in validation notes describe the original local runs; only the Quick case is included in the archive, under `examples/ransomcase1/`.
 
-`python scripts/package_project.py` builds `dist/memnolyze-source.zip` and a SHA-256 sidecar from an explicit list of project directories. It excludes virtual environments, caches, images, downloaded engine binaries, other cases, local validation outputs, and Git metadata. The explicitly selected Deep example is the exception. After extracting the archive, the project directory can be initialized as a new Git repository. The archive itself is ignored by Git.
+`python scripts/package_project.py` builds `dist/memnolyze-source.zip` and a SHA-256 sidecar from an explicit list of project directories. It excludes virtual environments, caches, images, downloaded engine binaries, other cases, local validation outputs, and Git metadata. The explicitly selected Quick example is the exception. After extracting the archive, the project directory can be initialized as a new Git repository. The archive itself is ignored by Git.
 
 Project documentation, source comments, CLI messages, and report controls use **English**. Original forensic records are retained in their source language; translating them would change evidence.
 
 Version **0.1.1** fixes Volatility discovery through Python's `-c` launcher and prefers the engine installed in the active Python environment. The fix also applies to the reported Python 3.13 launch failure; complete image validation on Python 3.13 has not been performed.
+
+Version **0.1.3** adds explicit custom/Elastic YARA options, original match evidence, rule provenance, and safe resume handling. See [YARA validation](docs/VALIDATION-YARA.md).
 
 Version **0.1.2** adds resolved MemProcFS module/native paths, an isolated API-import check, explicit discovery scope (`image_validated: false`), and concise backend failure hints. Doctor success is not an image initialization test.
 
@@ -78,7 +80,7 @@ Offline is the default. Existing symbols are reused. Symbol downloads must be en
 
 Volatility requires matching Windows ISF symbols. A `kernel.symbol_table_name` requirement failure is not a successful analysis. Child processes use the configured state directory, `.state` by default, for APPDATA and their cache. Depending on the Volatility version, downloaded ISFs may also reside in its installed symbol directories. `symbol_dirs` adds local search paths. Copy the required symbol files or provide a local symbol directory when moving to another computer.
 
-MemProcFS uses its local `info.db` by default; its additional debug-symbol subsystem is disabled. `memprocfs_symbols: true` enables that subsystem only outside offline mode. YARA is disabled, and no Elastic or other rule-set license is accepted automatically. FindEvil is experimental, particularly on Windows Server: absent detections are not evidence of a clean system.
+MemProcFS uses its local `info.db` by default; its additional debug-symbol subsystem is disabled. `memprocfs_symbols: true` enables that subsystem only outside offline mode. YARA is disabled by default and can be enabled explicitly as described below. No rule-set license is accepted automatically. FindEvil is experimental, particularly on Windows Server: absent detections are not evidence of a clean system.
 
 The orchestrator makes no network connections itself. Offline control relies on documented engine switches. Use a disconnected VM or firewall for OS-enforced network isolation; arbitrary modified engines cannot be sandboxed by this wrapper.
 
@@ -105,7 +107,7 @@ The orchestrator makes no network connections itself. Offline control relies on 
 .\.venv\Scripts\python.exe -m memnolyze report --case "D:\Results\case"
 ```
 
-Options: `--profile quick|standard|deep`, `--backend volatility|memprocfs|all`, `--pid`, `--config`, `--resume`, `--skip-hash`, `--offline`, `--allow-symbol-downloads`, `--verbose`, repeatable `--plugin LOGICAL_NAME`, and repeatable `--rerun LOGICAL_NAME|triage`.
+Options: `--profile quick|standard|deep`, `--backend volatility|memprocfs|all`, `--pid`, `--config`, `--resume`, `--skip-hash`, `--yara-rules PATH`, `--accept-elastic-license`, `--offline`, `--allow-symbol-downloads`, `--verbose`, repeatable `--plugin LOGICAL_NAME`, and repeatable `--rerun LOGICAL_NAME|triage`.
 
 Volatility PID arguments are added only when the installed plugin advertises `--pid`; global checks remain global. MemProcFS PID scope limits process/module/VAD/thread exports, while forensic processing and network extraction remain global. Ambiguous artifact attribution remains unresolved rather than being guessed.
 
@@ -125,6 +127,32 @@ During analysis, failed or incomplete checks are printed immediately with the ba
 
 ## Configuration and profiles
 
+### MemProcFS YARA scanning
+
+Custom rules and bundled Elastic rules are independent options. Both require the MemProcFS backend and `memprocfs_forensic: true`; they work with Quick, Standard, and Deep. Use an engine distribution containing its YARA runtime (the tested Windows distribution includes `vmmyara.dll`). A separate Python `yara` package is not needed by this integration.
+
+```powershell
+# Scan with your own local source/index or compiled rules; Elastic rules stay disabled:
+python -m memnolyze analyze --image "D:\Images\capture.dmp" --output "D:\Results\yara" `
+  --backend memprocfs --config config.portable.json --yara-rules "D:\Rules\index.yar"
+
+# Explicitly accept Elastic License 2.0 and enable bundled Elastic rules:
+python -m memnolyze analyze --image "D:\Images\capture.dmp" --output "D:\Results\elastic" `
+  --backend memprocfs --config config.portable.json --accept-elastic-license
+```
+
+The options can be combined. Read [Elastic License 2.0](https://www.elastic.co/licensing/elastic-license) before using the acceptance flag. MemProcFS may cache acceptance; memnolyze explicitly disables built-in rules on custom-only runs so cached acceptance cannot override the current configuration. There are no automatic rule downloads. Offline mode continues to disable symbol-server access.
+
+Custom matches become `yara_match` findings with rule name, process attribution when unambiguous, base address, and inline original match text. FindEvil `YR_*` indicators also use this category. Original result text, the reported match count, entry rule file, recognized local source includes, rule hashes, engine arguments, and license choice are preserved in each raw attempt. Includes must use local quoted `include "file.yar"` directives; source dependencies are resolved relative to their including file. Compiled rules are preserved as supplied. The engine-reported `rules.txt` is retained as-is and may contain only the entry path. Missing artifacts, malformed output, or mismatched counts mark the check incomplete; an empty result is accepted only with a completed zero-match count. Matches remain investigation leads rather than malware confirmations.
+
+These are whole-image forensic scans; `--pid` limits metadata extraction, not the YARA scan. Rule quality and scope can greatly affect runtime and output size. `max_vfs_bytes` limits each exported result file.
+
+Resume with the same options to reuse verified results. Changes to the entry rule or recognized includes trigger a fresh MemProcFS attempt. To enable/disable YARA or change rule paths on an existing case, keep its other settings and add `--resume --rerun triage` together with the new YARA options. Earlier raw attempts and configuration history are retained. `--skip-hash` can be added to avoid rehashing the image; rule and output artifact hashes are still checked.
+
+See [MemProcFS forensic YARA](https://github.com/ufrisk/MemProcFS/wiki/FS_Forensic_Yara) and [engine options](https://github.com/ufrisk/MemProcFS/wiki/_CommandLine). Custom-rule scanning and an explicitly authorized Elastic-enabled run were validated on the real demonstration image. The Elastic-enabled run completed without additional YARA indicators; see [YARA validation](docs/VALIDATION-YARA.md). The shipped example remains the original analysis with YARA disabled.
+
+### Settings
+
 Configuration is JSON; unknown keys are rejected. `volatility_command` is an argument array such as `["D:\\Tools\\venv\\Scripts\\vol.exe"]`, with no shell interpolation. `memprocfs_path` can be `null` for a regular pip installation or point to the directory containing its Python module and native binaries.
 
 | Setting | Behavior |
@@ -135,7 +163,9 @@ Configuration is JSON; unknown keys are rejected. `volatility_command` is an arg
 | `forensic_timeout_seconds` | Additional MemProcFS allowance and forensic wait limit after baseline extraction |
 | `memprocfs_forensic` | Set to `false` to disable forensic processing and FindEvil |
 | `memprocfs_symbols` | Additional debug symbols; disabled in offline mode |
-| `max_vfs_bytes` | Maximum FindEvil export size |
+| `memprocfs_yara_rules` | Local source/index or compiled rule path, or `null` to disable custom rules |
+| `memprocfs_accept_elastic_license` | Explicit Elastic License 2.0 acceptance and bundled-rule opt-in; default `false` |
+| `max_vfs_bytes` | Maximum size of each FindEvil/YARA export |
 | `plugins` | Optional logical plugin list replacing the selected Volatility profile |
 | `plugin_args` | Metadata arguments: `--pid`, `--offset`, `--address`, `--maxsize`, `--size`; no dump switches |
 
@@ -167,7 +197,7 @@ case/
 
 The standalone report works through `file://` without external CDNs or services. Its compact header shows the profile, status, result counts, severity distribution, and check coverage. Process details include parent relationships, command lines, modules, networks, and linked findings. Severity and confidence are separate. PIDs are correlated with EPROCESS/creation time where available; ambiguous matches remain `null`.
 
-Header **Filter (N)** menus list unique column values and their frequencies across all rows. Multiple values within a column use OR; different columns and free-text search use AND. No selection means no restriction. **Clear filters** resets the table. **Evidence sources** filters individual backend/plugin origins; the **Finding / evidence** menu uses finding titles rather than full embedded JSON. Click a column title to sort.
+Header **Filter (N)** menus list unique column values and their frequencies across all rows. Multiple values within a column use OR; different columns and free-text search use AND. **Select all** checks every value, including values hidden by the option search; uncheck specific values to exclude them. Unchecking every value hides all rows. **Clear selection** removes the column restriction; **Clear filters** resets the table. **Evidence sources** filters individual backend/plugin origins; the **Finding / evidence** menu uses finding titles rather than full embedded JSON. Click a column title to sort.
 
 **Expand all** and **Collapse all** operate on currently visible rows in Findings, Process Explorer, and execution history. These controls and filtering were exercised with headless Edge.
 
@@ -183,7 +213,7 @@ Initial rules cover scan-only processes, combined memory/thread anomalies, injec
 .\.venv\Scripts\python.exe -m pytest
 ```
 
-The suite supports both runners. **48 tests passed** after the hashing and console diagnostics updates; the unittest runner was used because package downloads were restricted. See [Quick validation](docs/VALIDATION.md), [Standard validation](docs/VALIDATION-STANDARD.md), [Deep validation](docs/VALIDATION-DEEP.md), and [architecture](docs/ARCHITECTURE.md).
+The suite supports both runners. **59 tests passed** after the YARA integration update; the unittest runner was used because package downloads were restricted. See [Quick validation](docs/VALIDATION.md), [Standard validation](docs/VALIDATION-STANDARD.md), [Deep validation](docs/VALIDATION-DEEP.md), and [architecture](docs/ARCHITECTURE.md).
 
 | Actual test-image run | Processes | Regions | Thread observations | Findings | Status |
 |---|---:|---:|---:|---:|---|
@@ -193,4 +223,4 @@ The suite supports both runners. **48 tests passed** after the hashing and conso
 
 Counts preserve observations from multiple sources rather than deduplicating every module, region, thread, or network object. A missing MemProcFS VAD table for PID 1708 explains the partial Standard/Deep status. Additional Windows builds, VMware/RAW inputs, and positive Volatility suspicious-thread cases need more real-image validation. The image and JSONL are streamed, but normalized tables and report HTML are currently built in RAM.
 
-Useful next steps are manual finding prioritization, process-lifetime-aware network attribution, selective forensic CSV/JSON exports, and report pagination. Custom YARA rules and binary dumps are not implemented.
+Useful next steps are manual finding prioritization, process-lifetime-aware network attribution, selective forensic CSV/JSON exports, and report pagination. Binary dumps are not implemented.

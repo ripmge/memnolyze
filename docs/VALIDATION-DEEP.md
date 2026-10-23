@@ -39,14 +39,14 @@ MemProcFS returned 13,014 VADs and 1,468 threads. Forensic reached 100 percent a
 
 Region/thread counts preserve observations from both engines rather than deduplicating them. Regions also include 11 malfind observations. Finding counts match Standard: the four Deep checks add investigation context without classifying every VAD, handle, thread, or privilege as suspicious. Four loader/network correlations remain included. Referenced original finding records are embedded directly, alongside record IDs and raw links.
 
-Open the [included Deep report](../examples/deep-case/report.html), approximately 14.6 MB. The original run was stored under `cases/ransomcase-deep`; only its distributable copy under `examples/deep-case` is included in the archive. Reports now also have compact overview metrics, English expand/collapse controls, and unique-value column filters. These UI changes do not alter evidence.
+The original Deep report (approximately 14.7 MB) remains in the local validation case `cases/ransomcase-deep` and is excluded from the source archive. The distributed [RansomCase1 example](../examples/README.md) now uses the completed Quick run to keep the report smaller. Reports now also have compact overview metrics, English expand/collapse controls, and unique-value column filters. These UI changes do not alter evidence.
 
 ## Verification
 
 ```powershell
-.\.venv\Scripts\python.exe scripts/verify_case.py examples/deep-case --allow-partial
+.\.venv\Scripts\python.exe scripts/verify_case.py cases/ransomcase-deep --allow-partial
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
-.\.venv\Scripts\python.exe -m memnolyze report --case examples/deep-case
+.\.venv\Scripts\python.exe -m memnolyze report --case cases/ransomcase-deep
 ```
 
 - **26 tests passed**. No corrections to Deep extraction or normalization were required.

@@ -20,6 +20,9 @@ def main(argv: list[str] | None = None) -> int:
     analyze.add_argument('--pid', type=int)
     analyze.add_argument('--config', type=Path)
     analyze.add_argument('--resume', action='store_true')
+    analyze.add_argument('--yara-rules', type=Path, help='Local YARA source/index or compiled rules for MemProcFS')
+    analyze.add_argument('--accept-elastic-license', action='store_true',
+                         help='Accept Elastic License 2.0 and enable built-in MemProcFS YARA rules')
     analyze.add_argument('--skip-hash', action='store_true',
                          help='Skip image SHA-256; resume checks path, size and modification time only')
     network = analyze.add_mutually_exclusive_group()
@@ -48,6 +51,13 @@ def main(argv: list[str] | None = None) -> int:
             return 0
         if args.pid is not None and args.pid < 0:
             raise ValueError('PID must be nonnegative')
+        if args.yara_rules:
+            config['memprocfs_yara_rules'] = str(args.yara_rules.resolve(strict=True))
+        if args.accept_elastic_license:
+            config['memprocfs_accept_elastic_license'] = True
+        if config['memprocfs_yara_rules'] or config['memprocfs_accept_elastic_license']:
+            if args.backend == 'volatility' or not config['memprocfs_forensic']:
+                raise ValueError('YARA options require the MemProcFS backend and forensic mode')
         from .pipeline import analyze as run
         return run(args.image, args.output, config, args.profile, args.backend, args.offline,
                    args.resume, args.pid, args.plugin, args.rerun, skip_hash=args.skip_hash)

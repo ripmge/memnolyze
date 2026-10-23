@@ -104,7 +104,10 @@ def rows(path: Path) -> Iterator[dict]:
         yield {k: v for k, v in row.items() if k != '__children'}
         for child in row.get('__children', []):
             yield from flatten(child)
-    if path.suffix == '.jsonl':
+    if path.name == 'yara-result.txt':
+        from .yara import matches
+        yield from matches(path)
+    elif path.suffix == '.jsonl':
         with path.open(encoding='utf-8-sig') as stream:
             for line in stream:
                 if line.strip():

@@ -35,7 +35,8 @@ def normalize(case: Path, executions: list[dict]) -> dict[str, list]:
     for (backend, plugin), execution in successful.items():
         files = {plugin: execution['source_file']} if backend == 'volatility' else execution.get('artifacts', {})
         for kind, source in files.items():
-            if kind in ('info', 'errors', 'forensic', 'findevil_listing', 'invocation'):
+            if kind in ('info', 'errors', 'forensic', 'findevil_listing', 'invocation') or (
+                    kind.startswith(('yara', 'findevil-')) and kind != 'yara-result'):
                 continue
             if kind == 'findevil':
                 for line_number, line in enumerate((case / source).read_text(encoding='utf-8', errors='replace').splitlines(), 1):
@@ -141,9 +142,12 @@ def normalize(case: Path, executions: list[dict]) -> dict[str, list]:
         # InInit-only differences remain metadata; require a load/memory-list discrepancy.
         elif kind == 'ldrmodules' and any(row.get(k) is False for k in ('InLoad', 'InMem')):
             category, title = 'loader_anomaly', 'Module absent from a loader list'
+        elif kind == 'yara-result':
+            category, title = 'yara_match', f'YARA: {row["rule"]}'
         elif kind == 'findevil':
             indicator = row['type']
-            category = ('memory_injection' if indicator in ('PE_INJECT', 'PRIVATE_RWX', 'PRIVATE_RX', 'NOIMAGE_RX')
+            category = ('yara_match' if indicator.startswith('YR_')
+                        else 'memory_injection' if indicator in ('PE_INJECT', 'PRIVATE_RWX', 'PRIVATE_RX', 'NOIMAGE_RX')
                         else 'thread_anomaly' if indicator == 'THREAD'
                         else 'loader_anomaly' if indicator.startswith(('PE_', 'PEB_')) else 'backend_indicator')
             title = f'FindEvil: {indicator}'

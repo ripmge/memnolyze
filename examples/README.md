@@ -1,13 +1,24 @@
-# Deep example case
+# RansomCase1 example
 
-Open [deep-case/report.html](deep-case/report.html) locally in a browser.
+This is the actual **Quick** analysis of the public RansomCase1 demonstration image used during development. The folder is named for the case; the profile is recorded in its manifest and report. Quick is the smallest of the three profiles (`quick`, `standard`, `deep`).
 
-This is the actual Deep analysis of the public demonstration memory image used during development. It includes raw plugin/API outputs, normalized records, execution logs and the report so evidence links remain usable. The memory image, backend binaries and symbol files are not included.
+| Recorded result | Value |
+|---|---|
+| Status | Complete |
+| Windows kernel build | 17134, x64 |
+| Engines | Volatility 3 2.28.2 and MemProcFS 5.19.0 |
+| Completed checks | 8 Volatility plugins and MemProcFS triage |
+| Processes | 134 |
+| Network observations | 105 |
+| Module observations | 6,660 |
+| Findings | 23, all medium severity / low confidence |
 
-The report is `partial`: MemProcFS could not retrieve the VAD table of MemCompression (PID 1708). See [the validation notes](../docs/VALIDATION-DEEP.md). Original acquisition/demo process metadata and historical development-machine paths remain as recorded; this is not an analysis of the receiving computer.
+The findings are 11 executable private memory regions from malfind, six FindEvil PROC_DEBUG indicators, five FindEvil THREAD indicators, and one FindEvil PEB_BAD_LDR indicator. These are investigation leads, not malware confirmations. Counts preserve source observations. See the [actual findings](ransomcase1/normalized/findings.json), [manifest](ransomcase1/manifest.json), and [validation notes](../docs/VALIDATION.md).
+
+The [interactive HTML report](ransomcase1/report.html) is approximately 2.2 MB, compared with approximately 14.7 MB for the previous Deep example. It retains the current report controls and original referenced evidence. Raw outputs, normalized data, and logs are included; the memory image, engines, and symbols are excluded. Original evidence and historical development-machine paths are preserved.
 
 Regenerate the report after installing the project:
 
 ```powershell
-python -m memnolyze report --case examples/deep-case
+python -m memnolyze report --case examples/ransomcase1
 ```
